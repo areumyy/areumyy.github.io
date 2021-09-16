@@ -96,12 +96,12 @@ font header .navbar-default .navbar-nav li a:hover {
 /*--
 	Slider Start
 --*/
-#slider {
-  background: url("../img/slider-bg.jpg") no-repeat;
+#slider { /* 수정 */
+  background: url("../img/slider-bg2.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: 10% 0%;
-  padding: 200px 0 280px 0;
+  padding: 100px 0 100px 0;
   position: relative;
 }
 #slider:before {
@@ -116,8 +116,15 @@ font header .navbar-default .navbar-nav li a:hover {
   background: linear-gradient(to left, #8b86a3, #322e40);
   opacity: 0.8;
 }
+#slider .row_inner {  /* 수정 */
+  margin-left: 0;
+  width: 100%;
+  float: none;
+  margin: 0 auto;
+}
 #slider .block {
   color: #E3E3E4;
+  text-align: center;
 }
 #slider .block h1 {
   font-family: 'Roboto', sans-serif;
@@ -128,12 +135,23 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-bottom: 45px;
 }
 #slider .block p {
-  font-size: 23px;
+  /* font-size: 23px; */
   line-height: 40px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   letter-spacing: 3px;
 }
+#slider .profile {  /* 추가 */
+  width: 180px;
+  border-radius: 50%;
+}
+#slider .profile_info {  /* 추가 */
+  display: flex;
+  justify-content: center;
+}
+
+
+
 /*--
 	wrapper Start
 --*/
