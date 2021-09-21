@@ -149,10 +149,23 @@ font header .navbar-default .navbar-nav li a:hover {
   display: flex;
   justify-content: center;
 }
-#slider .contact-icon {
-  width: 50px;
+#slider .material-icons {
+  font-size: 20px;
 }
-
+#slider .contact_icon {
+  width: 20px;
+  margin-bottom: 3px;
+}
+#slider li {
+  margin-bottom: 15px;
+  color: #fff;
+}
+#slider li:nth-child(3) {
+  margin-bottom: 0px;
+}
+#slider .link {
+  color: #fff;
+}
 
 
 /*--
@@ -286,6 +299,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 /* 기존 */
+/*PROMOTION*/
 .promotion {
   /*width: auto;*/
   height: 693px;
@@ -297,87 +311,79 @@ font header .navbar-default .navbar-nav li a:hover {
 .promotion.hide {
   height: 0;
 }
-
 .promotion .swiper-container {
+  /* 819px 슬라이드 3개와 그 사이 여백 10px씩 = 2477px */
   width: calc(819px * 3 + 20px);
-  /* 예시> width: calc(100% - 50px); */
   height: 553px;
   position: absolute;
   top: 40px;
   left: 50%;
-  margin-left: calc((819px * 3 + 20px) / -2);  /* ★중앙배치=> 가로 넓이의 절반값만큼 앞으로 당기기(-이용) */
+  margin-left: calc((819px * 3 + 20px) / -2);
 }
-
 .promotion .swiper-slide {
+  position: relative;
   opacity: .5;
   transition: opacity 1s;
-  position: relative;       /* .swiper-slide .btn의 부모요소 */
 }
-
-.promotion .swiper-slide-active {   /* -active가 붙어있으면 현재 중앙에 위치해져있는(선택되어진) 슬라이드를 의미(활성화된 이미지) */
+.promotion .swiper-slide-active {
   opacity: 1;
 }
-
 .promotion .swiper-slide .btn {
+  /*width: 130px;*/
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   left: 0;
   right: 0;
-  margin: auto;   /* COMMON 부분에서 btn 속성 중 width를 명시해놨기 때문에 가능 */
+  margin: auto;
 }
-
 .promotion .swiper-pagination {
-  bottom: 40px;   /* 라이브러리에서 기본적으로 position값 지정되어있음 - 개발자모드에서 확인해볼 것 */
+  bottom: 40px;
   left: 0;
   right: 0;
+  z-index: 0;
 }
-
-.promotion .swiper-pagination .swiper-pagination-bullet { /* .swiper-pagination-bulle는 라이브러리에서 기본으로 지정되어있는 선택자 */
-  background-color: transparent;  /* 기본으로 제공하는 배경색 투명으로 전환 */
+.promotion .swiper-pagination .swiper-pagination-bullet {
+  background-color: transparent;
   background-image: url("../images/promotion_slide_pager.png");
-   width: 12px;
-   height: 12px;
-   margin-right: 6px;
-   outline: none;
+  width: 13px;
+  height: 12px;
+  margin-right: 6px;
+  outline: none;
 }
-
-.promotion .swiper-pagination .swiper-pagination-bullet:last-child {  /* 마지막 동그라미 */
+.promotion .swiper-pagination .swiper-pagination-bullet:last-child {
   margin-right: 0;
 }
-
 .promotion .swiper-pagination .swiper-pagination-bullet-active {
   background-image: url("../images/promotion_slide_pager_on.png");
 }
-
 .promotion .swiper-prev,
-.promotion .swiper-next {   /* 다중선택자 => 줄바꿈 처리해주는게 시각적으로 좋음 */
+.promotion .swiper-next {
   width: 42px;
   height: 42px;
+  outline: none;
   border: 2px solid #333;
   border-radius: 50%;
   position: absolute;
+  /* Swiper Container 높이의 절반만큼 끌어올림 */
+  /* 버튼 높이의 절반만큼 추가로 끌어올림 */
   top: 300px;
-  z-index: 1; /* 요소의 쌓임 순서 올리기 */
+  z-index: 1;
   cursor: pointer;
-  outline: none;  /* 테두리선 제거 */
   display: flex;
   justify-content: center;
   align-items: center;
-
+  transition: .4s;
 }
-
 .promotion .swiper-prev {
   left: 50%;
   margin-left: -480px;
 }
-
 .promotion .swiper-next {
   right: 50%;
   margin-right: -480px;
 }
-
 .promotion .swiper-prev:hover,
-.promotion .swiper-next:hover {   /* 다중선택자에 가상선택자 추가시 모든 선택자에 부여해야함 */ 
+.promotion .swiper-next:hover {
   background-color: #333;
   color: #fff;
 }
