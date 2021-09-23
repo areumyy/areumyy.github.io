@@ -61,6 +61,18 @@ a:active {
   font-style: italic;
   color: #666;
 }
+.btn {
+  padding: 5px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+}
+.btn.btn-more {
+  background-color: #ccc;
+}
+
+
+
 /*--
 	Header Start
 --*/
@@ -690,8 +702,11 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #portfolio-work .block .portfolio-contant .position-center {
   position: absolute;
+  width: 100%;
   top: 50%;
-  left: 10%;
+  /* left: 10%; */
+  padding: 0 10px;
+  text-align: center;
   -webkit-transform: translate(0%, 50%);
   -moz-transform: translate(0%, 50%);
   -ms-transform: translate(0%, 50%);
