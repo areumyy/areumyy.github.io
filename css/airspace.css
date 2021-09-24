@@ -157,6 +157,13 @@ font header .navbar-default .navbar-nav li a:hover {
   width: 180px;
   border-radius: 50%;
 }
+#slider .profile_coment {  /* 추가 */
+  margin-bottom: 20px;
+}
+/* #slider .strong { 
+  color: rgb(231, 133, 133);
+  font-weight: 600;
+} */
 #slider .profile_info {  /* 추가 */
   display: flex;
   justify-content: center;
@@ -199,11 +206,18 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-left: 40px;
   width: 100%;
 }
+#intro .block_p img {
+  padding-left: 40px;
+  width: 70%;
+}
 #intro .section-title {
   margin-bottom: 0px;
 }
 #intro .section-title p {
   padding-top: 20px;
+  font-style: normal;
+  font-family: inherit;
+  font-weight: 600;
 }
 
 
@@ -308,6 +322,22 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #service .skill_icon {
   width: 80px;
+}
+
+.project_box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.project_box li {
+  width: 30%;
+  margin-right: 20px;
+}
+.project_img {
+  width: 100%;
+}
+.project_box li:nth-child(3) {
+  margin-right: 0px;
 }
 
 /* 기존 */
