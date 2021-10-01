@@ -28,7 +28,7 @@ author: Areum-Jung
 
 국비 세번의 프로젝트 중 파이널 프로젝트로 Frip 홈페이지 클론 코딩을 진행하였다. 크게 이용자/호스트/관리자 페이지로 섹션을 나눴고 호스트와 관리자 페이지의 일부는 임의로 디자인과 기능을 구현하였다.
 
- [Link : [Git](https://www.github.com/areumyy/SpringProject, "frip link") ]
+ [Link : [Git](https://www.github.com/areumyy/SpringProject "frip link") ]
 
 <br>
 

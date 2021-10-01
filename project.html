@@ -25,8 +25,8 @@ permalink: /project/
           <div class="portfolio-menu">
             <ul>
               <li class="filter" data-filter="all">Everything</li>
-              <li class="filter" data-filter=".Branding">Team</li>
-              <li class="filter" data-filter=".Websites">Personal</li>
+              <li class="filter" data-filter=".Team">Team</li>
+              <li class="filter" data-filter=".Personal">Personal</li>
             </ul>
           </div>
           <div class="portfolio-contant">
@@ -36,7 +36,9 @@ permalink: /project/
                 <h2>The collection is empty.</h2>
                 <p>{{ project.title }}</p>
               {% endfor %} -->
-              <li class="mix Branding">
+
+              <!-- Team -->
+              <li class="mix Team">
                 <a href="#">
                   <img src="{{ site.baseurl }}/img/portfolio/Frip.PNG" alt="Frip">
                   <div class="overly">
@@ -48,7 +50,7 @@ permalink: /project/
                   </div>
                 </a>
               </li>
-              <li class="mix Branding">
+              <li class="mix Team">
                 <a href="#">
                   <img src="{{ site.baseurl }}/img/portfolio/HemasHotel.PNG" alt="HemasHotel">
                   <div class="overly">
@@ -60,7 +62,7 @@ permalink: /project/
                   </div>
                 </a>
               </li>
-              <li class="mix Branding">
+              <li class="mix Team">
                 <a href="#">
                   <img src="{{ site.baseurl }}/img/portfolio/Starbucks.PNG" alt="Starbucks">
                   <div class="overly">
@@ -68,6 +70,20 @@ permalink: /project/
                       <h2>Starbucks</h2>
                       <p>스타벅스 회원전용 주문 시스템</p>
                       <button type="button" class="btn btn-more" onclick="location.href='starbucks'">자세히 보기</button>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <!-- Personal -->
+              <li class="mix Personal">
+                <a href="#">
+                  <img src="{{ site.baseurl }}/img/portfolio/TodoList.PNG" alt="TodoList">
+                  <div class="overly">
+                    <div class="position-center">
+                      <h2>Todo List</h2>
+                      <p>HTML5 / CSS3 / JavaScript</p>
+                      <button type="button" class="btn btn-more" onclick="location.href='todoList'">자세히 보기</button>
                     </div>
                   </div>
                 </a>

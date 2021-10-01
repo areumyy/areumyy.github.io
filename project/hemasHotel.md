@@ -28,7 +28,7 @@ author: Areum-Jung
 
 
 
- [Link : [Git](https://github.com/areumyy/JSP_TeamProject, "hemasHotel link") ]
+ [Link : [Git](https://github.com/areumyy/JSP_TeamProject "hemasHotel link") ]
 
 <br>
 
