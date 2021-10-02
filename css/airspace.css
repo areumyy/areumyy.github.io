@@ -206,10 +206,6 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-left: 40px;
   width: 100%;
 }
-#intro .block_p img {
-  padding-left: 40px;
-  width: 70%;
-}
 #intro .section-title {
   margin-bottom: 0px;
 }
@@ -563,8 +559,10 @@ font header .navbar-default .navbar-nav li a:hover {
 #clients-logo-section .clients-logo-img {
   padding: 0px 50px;
 }
+
+
 /*---------------------------------------------
-					Work Start
+					Project Start
 -----------------------------------------------*/
 /*--
 	Slider-work Start
@@ -812,10 +810,51 @@ font header .navbar-default .navbar-nav li a:hover {
   display: inline-block;
   padding: 40px 0px;
 }
+
+/*--
+	MarkDown
+--*/
+.project .block_p img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.project .container_box {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.project img + em {
+  display: block;
+  margin: 20px auto;
+  padding: 0 5px;
+  color: #d28989;
+  background-color: #f7e6e6;
+  width: fit-content;
+  border-radius: 5px;
+  font-style: initial;
+}
+
+
 /*---------------------------------------------
-					Work Close
+					Project Close
 -----------------------------------------------*/
+
 /*=============================================*/
+
+/*---------------------------------------------
+					Blog Start
+-----------------------------------------------*/
+
+/* 블로그 구간입니다 */
+
+/*---------------------------------------------
+					Blog Close
+-----------------------------------------------*/
+
+/*=============================================*/
+
 /*---------------------------------------------
 					 Contact Start
 -----------------------------------------------*/

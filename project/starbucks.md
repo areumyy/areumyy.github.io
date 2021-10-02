@@ -8,54 +8,76 @@ author: Areum-Jung
 # **Project Starbucks**
 
 <img width="1120" alt="starbucks" src="https://user-images.githubusercontent.com/78872071/134526806-a6f54892-b2b9-4add-a76d-2f8a8dabba0d.PNG">
-
-
-* **Stacks**
-  Java / Oracle
-
-* **Team**
   
-  Team(4명)
+<br>
 
-* **Period**
+#### **Stacks**
 
-  21/03/26 - 21/04/16
+    Java / Oracle
+
+#### **Team**
+  
+    Team(4명)
+
+#### **Period**
+
+    21/03/26 - 21/04/16
+
+<br>
 
 ---
 
-## **프로젝트 소개**
+## **프로젝트 소개**  
+<br>
 스타벅스 키오스크를 구현한 회원전용 주문 시스템
-
 
 <br>
 
 ---
 ## **구현파트**
-* 로그인/회원가입 페이지
-* 마이 페이지
-* 관리자
+<br>
+  
+  ο 메인홈 
+
+  ο 관리자 메뉴변경
+
+<br>
 
 ---
 ## **페이지별 요구기능**
-1. 로그인 페이지
-   - 아이디 / 비밀번호 찾기
-2. 회원가입 페이지
-3. 마이 페이지
-    - 회원정보 수정/삭제
-    - 회원탈퇴
-    - 로그아웃
-4. 관리자 페이지 - 메뉴변경
-    - 메뉴명/가격 변경
+<br>
+1. 메인홈 
+
+   ο 회원정보 조회/수정
+
+   ο 회원탈퇴
+
+   ο 로그아웃 
+
+   ο 포인트 확인
+
+2. 관리자 메뉴변경  
+
+    ο 가격수정
+
+
+<br>
 
 ---
-## **데모 이미지**
-### 로그인 페이지
-![로그인 + 아이디 저장1](https://user-images.githubusercontent.com/78872071/134597645-f808de2a-8c6b-4834-8bb5-a687887a6df5.PNG)
+## **데모 이미지**  
+<br>
 
+#### **메인홈**  
 
+![멤버홈](https://user-images.githubusercontent.com/78872071/135721278-155f02d4-ab75-4862-aadd-e8bee3a100e5.png)
+*메인홈*
 
-### 회원가입 페이지
-![회원가입](https://user-images.githubusercontent.com/78872071/134597683-6a7222d5-e6fc-4a91-8212-d3fb4741d814.png)
+<br>
 
+![회원정보수정](https://user-images.githubusercontent.com/78872071/135721277-d8ecfdc4-50e5-4f3e-b282-3ad030acd1e7.png)
+*회원정보 조회/수정*
 
-### 마이 페이지
+#### **관리자 메뉴변경**  
+
+![메뉴수정](https://user-images.githubusercontent.com/78872071/135721270-2d8a19c3-317d-4074-9375-c35c065c9d81.png)
+*가격수정*
