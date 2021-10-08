@@ -166,30 +166,69 @@ font header .navbar-default .navbar-nav li a:hover {
 #slider .profile_coment {  /* 추가 */
   margin-bottom: 20px;
 }
-/* #slider .strong { 
-  color: rgb(231, 133, 133);
-  font-weight: 600;
-} */
 #slider .profile_info {  /* 추가 */
   display: flex;
   justify-content: center;
 }
 #slider .material-icons {
   font-size: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 6.5px;
 }
 #slider .contact_icon {
   width: 20px;
   margin-bottom: 3px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 6.5px;
 }
-#slider li {
-  margin-bottom: 15px;
+#slider ul {
+  display: flex;
+  justify-content: center;
+}
+#slider ul li {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 1.2px solid #fff;
+  border-radius: 50%;
+  box-sizing: content-box;
+  padding: 2px;
+  margin-right: 15px;
+  transition: .4s;
+  cursor: pointer;
+}
+#slider ul li:nth-child(3) {
+  margin-right: 0px;
+}
+#slider ul li.selected {
+  width: 200px;
+  border-radius: 10px;
+  transition: .4s;
+}
+#slider ul li .contact_info {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-right: 15px;
+}
+/* #slider ul li .contact_info:nth-child(2)는 먹히지 X
+   why? contact_info 선택자는 동일 부모요소 아래의 자식 선택자가 아니기 때문에 
+   두번째 요소를를 인식할 수 없음 */
+#slider ul li:nth-child(2) .contact_info {
+  padding-right: 0px;
+}
+#slider ul li .link {
   color: #fff;
 }
-#slider li:nth-child(3) {
-  margin-bottom: 0px;
-}
-#slider .link {
-  color: #fff;
+#slider ul li .link:hover {
+  color: rgb(233, 155, 155);
 }
 
 
@@ -326,6 +365,53 @@ font header .navbar-default .navbar-nav li a:hover {
   width: 80px;
 }
 
+
+/*--
+	call-to-action Start
+--*/
+#project-section {
+  background: url("../img/call-to-action-bg.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 70px 0px;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+#project-section:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #1d192c;
+  opacity: 0.8;
+}
+#project-section h2 {
+  padding-bottom: 20px;
+  line-height: 33px;
+  margin: 0;
+  font-size: 30px;
+}
+#project-section p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+#project-section .btn-call-to-action {
+  padding: 15px 35px;
+  border: none;
+  background-color: #fff;
+  font-size: 15px;
+  color: #333333;
+  margin-top: 30px;
+}
+#project-section ul li:hover .overly {  /* 추가 */
+  /* opacity: 1; */
+}
+
 .project_box {
   display: flex;
   justify-content: center;
@@ -335,6 +421,10 @@ font header .navbar-default .navbar-nav li a:hover {
   width: 30%;
   margin-right: 20px;
 }
+.project_box li:hover {
+  background-color: #2C2C2C;
+  opacity: .1;
+}
 .project_img {
   width: 100%;
 }
@@ -342,7 +432,84 @@ font header .navbar-default .navbar-nav li a:hover {
   margin-right: 0px;
 }
 
-/* 기존 */
+
+/* 추가구간 */
+#portfolio-work .block .portfolio-contant ul li {
+  /* float: left; */
+  /* width: 32.22%; */
+  width: 32%;
+  overflow: hidden;
+  margin: 6px;
+  position: relative;
+}
+#portfolio-work .block .portfolio-contant ul li:hover .overly {
+  opacity: 1;
+}
+#portfolio-work .block .portfolio-contant ul li:hover .position-center {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+#portfolio-work .block .portfolio-contant ul li a {
+  display: block;
+  color: #fff;
+}
+#portfolio-work .block .portfolio-contant ul li a h2 {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#portfolio-work .block .portfolio-contant ul li a p { /* 수정 */
+  font-size: 14px;
+  margin-bottom: 0;
+}
+#portfolio-work .block .portfolio-contant ul li a span {
+  font-style: italic;
+  font-size: 13px;
+  color: #655E7A;
+}
+/* 
+  overly Stacks 이미지
+*/
+#portfolio-work .block .portfolio-contant ul img {
+  width: 100%;
+  height: auto;
+}
+#portfolio-work .block .portfolio-contant .overly {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+  text-align: center;
+}
+#portfolio-work .block .portfolio-contant .position-center {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  /* left: 10%; */
+  padding: 0 10px;
+  text-align: center;
+  -webkit-transform: translate(0%, 50%);
+  -moz-transform: translate(0%, 50%);
+  -ms-transform: translate(0%, 50%);
+  transform: translate(0%, 50%);
+  -webkit-transition: .5s all;
+  -o-transition: .5s all;
+  transition: .5s all;
+}
+/* 추가구간 끝 */
+
+
+/* project-section 슬라이드 효과 적용 CSS */
 /*PROMOTION*/
 .promotion {
   /*width: auto;*/
@@ -431,51 +598,6 @@ font header .navbar-default .navbar-nav li a:hover {
   background-color: #333;
   color: #fff;
 }
-
-
-/*--
-	call-to-action Start
---*/
-#call-to-action {
-  background: url("../img/call-to-action-bg.jpg") no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 70px 0px;
-  position: relative;
-  text-align: center;
-  color: #fff;
-}
-#call-to-action:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background: #1d192c;
-  opacity: 0.8;
-}
-#call-to-action h2 {
-  padding-bottom: 20px;
-  line-height: 33px;
-  margin: 0;
-  font-size: 30px;
-}
-#call-to-action p {
-  font-size: 14px;
-  line-height: 1.6;
-}
-#call-to-action .btn-call-to-action {
-  padding: 15px 35px;
-  border: none;
-  background-color: #fff;
-  font-size: 15px;
-  color: #333333;
-  margin-top: 30px;
-}
-
 
 
 
@@ -710,8 +832,7 @@ font header .navbar-default .navbar-nav li a:hover {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* 수정 */
-#portfolio-work .block .portfolio-contant ul li a p {
+#portfolio-work .block .portfolio-contant ul li a p { /* 수정 */
   font-size: 14px;
   margin-bottom: 0;
 }
