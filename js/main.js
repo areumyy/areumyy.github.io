@@ -146,3 +146,46 @@ emailEls.forEach((emailEl, index) => emailEl.addEventListener('click', function(
 	// } else if(emailEls.classList.contains('cont-phone')) {
 	// 	select(index)
 	// }
+
+
+// Index 페이지 Skill 섹션 애니메이션 효과 적용하기
+let skill = document.getElementById('service')
+let graphEls = skill.querySelectorAll('.graph')
+
+console.log('skill >>> ', skill)
+console.log('graph >>> ', graphEls)
+
+window.addEventListener('scroll', _.throttle(function() {
+
+	console.log('scrollY >>> ', window.scrollY)
+
+	if(window.scrollY > 1225) {
+
+		for(let i=0; i<graphEls.length; i++) {
+			
+			gsap.to(graphEls[i], 1, {
+				width: graphEls[i].dataset.width +'%',
+				height: '7px',
+				backgroundColor: 'skyblue'
+			});
+
+		}
+
+	} else {
+
+		for(let i=0; i<graphEls.length; i++) {
+			
+			gsap.to(graphEls, 1, {
+				width: '0%',
+				height: '7px',
+			});
+
+		}
+
+		
+
+	}
+	
+
+}, 300))
+

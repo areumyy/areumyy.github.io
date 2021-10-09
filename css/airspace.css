@@ -364,6 +364,25 @@ font header .navbar-default .navbar-nav li a:hover {
 #service .skill_icon {
   width: 80px;
 }
+#service .service-item .percent_box {
+  
+}
+#service .service-item .percent_box p {
+  margin-bottom: 5px;
+}
+#service .service-item .percent_box .percent_inner {
+  width: 100%;
+  height: 7px;
+  background-color: #ccc;
+  border-radius: 10px;
+}
+#service .service-item .percent_box .graph {
+  /* width: 70%; */
+  /* height: inherit;
+  background-color: lightblue;
+  border-radius: 10px;
+  transition: .4s; */
+}
 
 
 /*--
@@ -405,11 +424,8 @@ font header .navbar-default .navbar-nav li a:hover {
   border: none;
   background-color: #fff;
   font-size: 15px;
-  color: #333333;
+  color: #333333; 
   margin-top: 30px;
-}
-#project-section ul li:hover .overly {  /* 추가 */
-  /* opacity: 1; */
 }
 
 .project_box {
@@ -421,20 +437,17 @@ font header .navbar-default .navbar-nav li a:hover {
   width: 30%;
   margin-right: 20px;
 }
-.project_box li:hover {
+/* .project_box li:hover {
   background-color: #2C2C2C;
   opacity: .1;
-}
+} */
 .project_img {
   width: 100%;
 }
 .project_box li:nth-child(3) {
   margin-right: 0px;
 }
-
-
-/* 추가구간 */
-#portfolio-work .block .portfolio-contant ul li {
+#project-section .block ul li {
   /* float: left; */
   /* width: 32.22%; */
   width: 32%;
@@ -442,10 +455,10 @@ font header .navbar-default .navbar-nav li a:hover {
   margin: 6px;
   position: relative;
 }
-#portfolio-work .block .portfolio-contant ul li:hover .overly {
+#project-section .block ul li:hover .overly {
   opacity: 1;
 }
-#portfolio-work .block .portfolio-contant ul li:hover .position-center {
+#project-section .block ul li:hover .position-center {
   position: absolute;
   top: 50%;
   -webkit-transform: translate(0%, -50%);
@@ -453,32 +466,7 @@ font header .navbar-default .navbar-nav li a:hover {
   -ms-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
 }
-#portfolio-work .block .portfolio-contant ul li a {
-  display: block;
-  color: #fff;
-}
-#portfolio-work .block .portfolio-contant ul li a h2 {
-  font-size: 22px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-#portfolio-work .block .portfolio-contant ul li a p { /* 수정 */
-  font-size: 14px;
-  margin-bottom: 0;
-}
-#portfolio-work .block .portfolio-contant ul li a span {
-  font-style: italic;
-  font-size: 13px;
-  color: #655E7A;
-}
-/* 
-  overly Stacks 이미지
-*/
-#portfolio-work .block .portfolio-contant ul img {
-  width: 100%;
-  height: auto;
-}
-#portfolio-work .block .portfolio-contant .overly {
+#project-section .block .project_box li .overly {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -491,7 +479,7 @@ font header .navbar-default .navbar-nav li a:hover {
   transition: .3s all;
   text-align: center;
 }
-#portfolio-work .block .portfolio-contant .position-center {
+#project-section .block .project_box .position-center {
   position: absolute;
   width: 100%;
   top: 50%;
@@ -506,8 +494,24 @@ font header .navbar-default .navbar-nav li a:hover {
   -o-transition: .5s all;
   transition: .5s all;
 }
-/* 추가구간 끝 */
 
+#project-section .block ul li h2 {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#project-section .block ul li p { /* 수정 */
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+#project-section .block ul li .stacks_box {
+  margin-bottom: 15px;
+}
+#project-section .block ul li .stacks_icon {
+  width: auto;
+  height: auto;
+}
 
 /* project-section 슬라이드 효과 적용 CSS */
 /*PROMOTION*/
@@ -879,6 +883,15 @@ font header .navbar-default .navbar-nav li a:hover {
 #portfolio-work .block .mix {
   display: none;
 }
+/* Overly Stacks Image */
+#portfolio-work .block .portfolio-contant .stacks_box {
+  margin-bottom: 15px;
+}
+#portfolio-work .block .portfolio-contant .stacks_icon {
+  width: auto;
+  height: auto;
+}
+
 /*--
 	wrapper-work Start
 --*/
@@ -941,17 +954,6 @@ font header .navbar-default .navbar-nav li a:hover {
   text-align: center;
   display: inline-block;
   padding: 40px 0px;
-}
-
-/*--
-  Overly Stacks Image
---*/
-#portfolio-work .block .portfolio-contant .stacks_box {
-  margin-bottom: 15px;
-}
-#portfolio-work .block .portfolio-contant .stacks_icon {
-  width: auto;
-  height: auto;
 }
 
 
