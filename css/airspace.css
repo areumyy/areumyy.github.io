@@ -172,19 +172,25 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #slider .material-icons {
   font-size: 20px;
-  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 6.5px;
+  right: 6.5px; */
 }
-#slider .contact_icon {
+#slider .contact_icon_box {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#slider .contact_icon_box .contact_icon {
   width: 20px;
-  margin-bottom: 3px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  right: 6.5px;
 }
 #slider ul {
   display: flex;
@@ -194,6 +200,7 @@ font header .navbar-default .navbar-nav li a:hover {
   width: 30px;
   height: 30px;
   position: relative;
+  display: flex;
   border: 1.2px solid #fff;
   border-radius: 50%;
   box-sizing: content-box;
@@ -212,18 +219,22 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #slider ul li .contact_info {
   display: none;
-  position: absolute;
+  flex-grow: 1;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  /* position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding-right: 15px;
+  padding-left: 18px; */
 }
 /* #slider ul li .contact_info:nth-child(2)는 먹히지 X
    why? contact_info 선택자는 동일 부모요소 아래의 자식 선택자가 아니기 때문에 
    두번째 요소를를 인식할 수 없음 */
-#slider ul li:nth-child(2) .contact_info {
-  padding-right: 0px;
-}
+/* #slider ul li:nth-child(2) .contact_info {
+  padding-left: 0px;
+} */
 #slider ul li .link {
   color: #fff;
 }
@@ -681,6 +692,35 @@ font header .navbar-default .navbar-nav li a:hover {
   display: inline-block;
   border: 0px;
 }
+
+#testimonial .post-inner {
+  width: 100%;
+  min-height: 100px;
+  background-color: white;
+  border-bottom: 1px dotted #ddd;
+}
+#testimonial .post-inner a:link, .post-inner a:visited {
+  font-size: 30px;
+  color: #333;
+}
+
+#testimonial .post-inner a:hover {
+  color: #0D0017;
+}
+
+#testimonial .more-post {
+  text-align: center;
+  padding: 20px 0;
+}
+#testimonial .more-post a {
+  font-size: 18px;
+  color: #000;
+}
+#testimonial .more-post a:hover {
+  color: rgb(233, 155, 155);
+}
+
+
 /*--
 	features Start
 --*/
@@ -739,6 +779,13 @@ font header .navbar-default .navbar-nav li a:hover {
   letter-spacing: 1px;
   word-spacing: 3px;
 }
+
+.post-box {
+  width: 1170px;
+  margin: auto;
+}
+
+
 /*--
 	portfolio-work Start
 --*/

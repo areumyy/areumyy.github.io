@@ -34,7 +34,7 @@ permalink: /
               <span class="contact_info">010-5438-2367</span>
             </li>
             <li class="contact cont-git">
-              <img src="./img/github_icon.png" alt="github" class="contact_icon" id="git">
+              <div class="contact_icon_box"><img src="./img/github_icon.png" alt="github" class="contact_icon" id="git"></div>
               <a href="https://github.com/areumyy" class="contact_info">
                 <span class="link">github.com/areumyy</span>
               </a>
@@ -274,8 +274,21 @@ permalink: /
                 </div>
               </div>
             </li>
+            <li>
+              <img src="{{ site.baseurl }}/img/portfolio/TodoList.PNG" alt="TodoList" class="project_img">
+              <div class="overly">
+                <div class="position-center">
+                  <h2>TodoList</h2>
+                  <p class="stacks_box">
+                    <img alt="HTML5" class="stacks_icon" src="https://camo.githubusercontent.com/c9bceecb7edc6617c1c1ddaf3d14a0c203bdb2a65421800861482938069a84d1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f48544d4c352d6464346232343f7374796c653d666c61742d737175617265266c6f676f3d48544d4c35266c6f676f436f6c6f723d7768697465">
+                    <img alt="CSS3" class="stacks_icon" src="https://camo.githubusercontent.com/f30b77c554236e1b879d2b422cf76042daa8e10fce9845a236928aeb165341de/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f435353332d3335393563663f7374796c653d666c61742d737175617265266c6f676f3d43535333266c6f676f436f6c6f723d7768697465">
+                    <img alt="JS" class="stacks_icon" src="https://camo.githubusercontent.com/0e0fb44d581435fb12bb5fdee50431fc34ce8b5e467dc7334e09d815cebdba31/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a532d79656c6c6f773f7374796c653d666c61742d737175617265266c6f676f3d4a617661736372697074266c6f676f436f6c6f723d7768697465">
+                  </p>
+                  <button type="button" class="btn btn-more" onclick="location.href='./project/todoList'">자세히 보기</button>
+                </div>
+              </div>
+            </li>
           </ul>
-
         </div>
       </div>
     </div>
@@ -290,6 +303,22 @@ permalink: /
       <div class="section-title text-center">
         <h2>Blog</h2>
         <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p> -->
+      </div>
+      <div class="post-box">
+        {% for post in site.posts %}
+        <div class="post-inner">
+          <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
+          <p class="post-date">{{ post.date | date_to_long_string }}</p>
+          <!-- <p>
+            {{ post.content | strip_html | truncatewords: 50 }}
+          </p> -->
+        </div>
+        {% endfor %}
+      </div>
+      <div class="more-post">
+        <a href="{{ site.baseurl }}/blog"><span class="material-icons">
+          navigate_next
+          </span>더보기</a>
       </div>
     </div>
     <!-- <div class="row">

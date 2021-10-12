@@ -17,7 +17,7 @@
  }
 
 .post-area {
-  padding: 40px;
+  padding: 40px 15px;
   width: 100%;
   min-height: 150px;
   background-color: white;
@@ -31,4 +31,8 @@
 
 .post-area a:hover {
   color: #0D0017;
+}
+
+.material-icons {
+  vertical-align: top;
 }
