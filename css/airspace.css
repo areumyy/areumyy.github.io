@@ -458,6 +458,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #project-section .swiper-container .swiper-wrapper .swiper-slide-active {
   opacity: 1;
+  cursor: pointer;
 }
 #project-section .swiper-container .swiper-wrapper .swiper-slide .project_img {
   width: 360px;
@@ -497,10 +498,10 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
       /* hover */
-#project-section .swiper-slide-active:hover .overly {
+#project-section .swiper-container .swiper-wrapper .swiper-slide-active:hover .overly {
   opacity: 1;
 }
-#project-section .swiper-slide:hover-active .position-center {
+#project-section .swiper-container .swiper-wrapper .swiper-slide-active:hover .position-center {
   position: absolute;
   top: 50%;
   -webkit-transform: translate(0%, -50%);
@@ -508,7 +509,7 @@ font header .navbar-default .navbar-nav li a:hover {
   -ms-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
 }
-#project-section .swiper-slide-active .overly {
+#project-section .swiper-container .swiper-wrapper .swiper-slide-active .overly {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -521,7 +522,7 @@ font header .navbar-default .navbar-nav li a:hover {
   transition: .3s all;
   text-align: center;
 }
-#project-section .swiper-slide-active .position-center {
+#project-section .swiper-container .swiper-wrapper .swiper-slide-active .position-center {
   position: absolute;
   width: 100%;
   top: 50%;
@@ -537,20 +538,20 @@ font header .navbar-default .navbar-nav li a:hover {
   transition: .5s all;
 }
 
-#project-section .swiper-slide-active h2 {
+#project-section .swiper-container .swiper-wrapper .swiper-slide-active h2 {
   font-size: 22px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-#project-section .swiper-slide-active p { /* 수정 */
+#project-section .swiper-container .swiper-wrapper .swiper-slide-active p { /* 수정 */
   font-size: 14px;
   margin-bottom: 0;
 }
 
-#project-section .swiper-slide-active .stacks_box {
+#project-section .swiper-container .swiper-wrapper .swiper-slide-active .stacks_box {
   margin-bottom: 15px;
 }
-#project-section .swiper-slide-active .stacks_icon {
+#project-section .swiper-container .swiper-wrapper .swiper-slide-active .stacks_icon {
   width: auto;
   height: auto;
 }
