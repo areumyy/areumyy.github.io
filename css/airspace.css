@@ -16,6 +16,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
+  position: relative;
 }
 h1,
 h2,
@@ -159,7 +160,37 @@ font header .navbar-default .navbar-nav li a:hover {
   font-weight: 300;
   letter-spacing: 3px;
 }
-#slider .profile {  /* 추가 */
+
+/* medal start */
+#slider .profile_medal {
+  width: 180px;
+  height: 180px;
+  perspective: 600px;   /* 3D 원근감 */
+  margin: auto;
+}
+#slider .profile_medal .front,
+#slider .profile_medal .back { /* 다중선택자 */
+  width: inherit;
+  height: inherit;
+  position: absolute;   /* 부모요소인 .medal에 가로/세로 너비가 지정되어있어서 ok */
+  transition: 1s;
+  backface-visibility: hidden;  /* 180도 회전되어있는 것(뒤집어져있는)은 hidden으로 숨김 */
+}
+#slider .profile_medal .front {
+  transform: rotateY(0deg);     /* 명시적으로 0도에서 시작한다고 작성 */
+}
+#slider .profile_medal:hover .front {
+  transform: rotateY(180deg);   /* 오른쪽 방향으로 180도 꺾임 */
+}
+#slider .profile_medal .back {
+  transform: rotateY(-180deg);  /* 왼쪽 방향으로 180도 꺾여있음 */
+}
+#slider .profile_medal:hover .back {
+  transform: rotateY(0deg);
+}
+/* medal end */
+
+#slider .profile_img {  /* 추가 */
   width: 180px;
   border-radius: 50%;
 }
@@ -407,7 +438,7 @@ font header .navbar-default .navbar-nav li a:hover {
   position: relative;
   text-align: center;
   color: #fff;
-  height: 400px;
+  height: 430px;
 }
 #project-section:before {
   content: "";
@@ -422,7 +453,7 @@ font header .navbar-default .navbar-nav li a:hover {
   opacity: 0.8;
 }
 #project-section h2 {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   line-height: 33px;
   margin: 0;
   font-size: 30px;
@@ -444,7 +475,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #project-section .swiper-container {
   /* width: calc(330px * 3 + 20px); */
   width: inherit;
-  height: 210px;
+  height: 200px;
   /* background-color: orange; */
   overflow: hidden;
  
@@ -460,12 +491,16 @@ font header .navbar-default .navbar-nav li a:hover {
   opacity: 1;
   cursor: pointer;
 }
+#project-section .swiper-container .swiper-wrapper .swiper-slide-active:nth-child(3) {
+  margin-right: 0;
+}
 #project-section .swiper-container .swiper-wrapper .swiper-slide .project_img {
-  width: 360px;
+  width: inherit;
+  height: inherit;
 }
 #project-section .swiper-pagination {
   bottom: auto;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 #project-section .swiper-prev, 
 #project-section .swiper-next {
@@ -542,6 +577,7 @@ font header .navbar-default .navbar-nav li a:hover {
   font-size: 22px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  padding-bottom: 15px;
 }
 #project-section .swiper-container .swiper-wrapper .swiper-slide-active p { /* 수정 */
   font-size: 14px;
@@ -1266,6 +1302,27 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #292929;
   font-weight: 300;
 }
+
+/*---------------------------------------------
+					To-Top Start
+-----------------------------------------------*/
+.to_top {
+  display: none;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 4px;
+  cursor: pointer;
+  z-index: 9;    /* 다른요소들 보다 최상단에 위치 */
+}
+
+/*---------------------------------------------
+					To-Top end
+-----------------------------------------------*/
+
 /*---------------------------*/
 /*--
 	footer Start

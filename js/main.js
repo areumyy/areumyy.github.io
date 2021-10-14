@@ -48,13 +48,12 @@ $(document).ready(function(){
 
 });
 
-/* 추가 */
-// 공지사항/프로모션 스와이퍼(17, 32강 참고) -----------------------------------------------------------------------------------------------
+// 메인 project-section 슬라이드 효과
 // swiper(선택자, 옵션)
 new Swiper('.swiper-container', {
 	// direction: 'horizontal' => swiper 함수에 기본값으로 들어가있음
 	slidesPerView: 3,        // 한번에 보여줄 슬라이드 개수
-	spaceBetween: 10,        // 슬라이드 사이 여백
+	spaceBetween: 20,        // 슬라이드 사이 여백
 	centeredSlides: true,    // 1번 슬라이드가 가운데 보이기
 	loop: true,              // 반복재생여부
 	autoplay: {              // 자동재생여부 - 3s
@@ -72,7 +71,7 @@ new Swiper('.swiper-container', {
 
 
 /* 추가 */
-// 메인 페이지 컨텍트 아이콘 클릭시 애니메이션 효과 적용
+// 메인 contact-section 아이콘 클릭시 애니메이션 효과 적용
 let emailEls = document.querySelectorAll('.contact')
 let contactEl = document.querySelectorAll('.contact_info')
 
@@ -140,7 +139,7 @@ emailEls.forEach((emailEl, index) => emailEl.addEventListener('click', function(
 	// }
 
 
-// Index 페이지 Skill 섹션 애니메이션 효과 적용하기
+// 메인 skill-section 애니메이션 효과 적용하기
 let skill = document.getElementById('service')
 let graphEls = skill.querySelectorAll('.graph')
 
@@ -160,7 +159,6 @@ window.addEventListener('scroll', _.throttle(function() {
 				height: '7px',
 				backgroundColor: 'skyblue'
 			});
-
 		}
 
 	} else {
@@ -171,13 +169,33 @@ window.addEventListener('scroll', _.throttle(function() {
 				width: '0%',
 				height: '7px',
 			});
-
 		}
-
-		
-
 	}
-	
 
 }, 300))
 
+
+// to-top 아이콘 위로가기 효과
+let totop = document.querySelector('.to_top')
+
+window.addEventListener('scroll', _.throttle(function() {
+
+	if(window.scrollY > 945) {
+		
+		gsap.to(totop, .2, {
+			display: 'block',
+			x: 0
+		})
+
+	} else {
+		
+		gsap.to(totop, .2, {
+			x: 100
+		})
+	}
+
+}, 300))
+
+totop.addEventListener('click', function(){
+	window.scrollTo({top: 0, behavior: 'smooth'})
+})
