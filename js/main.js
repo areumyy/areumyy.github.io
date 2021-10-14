@@ -199,3 +199,21 @@ window.addEventListener('scroll', _.throttle(function() {
 totop.addEventListener('click', function(){
 	window.scrollTo({top: 0, behavior: 'smooth'})
 })
+
+
+// info-floating-badge 위치이동 효과
+let badge = document.querySelector('.info_badge')
+
+window.addEventListener('scroll', function() {
+
+	if(window.scrollY > 90) {
+		gsap.to(badge, .2, {
+			y: -80
+		})
+	} else {
+		gsap.to(badge, .2, {
+			y: 0
+		})
+	}
+
+})

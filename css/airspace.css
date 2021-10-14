@@ -113,6 +113,49 @@ font header .navbar-default .navbar-nav li a:hover {
 					Index Start
 -----------------------------------------------*/
 /*--
+	Info Floating Badge Start
+--*/
+.info_badge {
+  position: fixed;
+  right: 30px;
+  top: 100px;
+  z-index: 9;
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 3px;
+  width: 40px;
+  height: 40px;
+  transition: .4s;
+}
+.info_badge img {
+  width: 25px;
+  transition: .4s;
+}
+.info_badge .badge_coment {
+  /* display: none; */
+  opacity: 0;
+  transform: rotate(90deg);
+  transition: .2s;
+}
+.info_badge:hover {
+  height: 210px;
+  transition: .4s;
+}
+.info_badge:hover img {
+  transform: rotate(90deg);
+  transition: .4s;
+}
+.info_badge:hover .badge_coment {
+  /* display: block; */
+  opacity: 1;
+  transform: rotate(90deg);
+  transition: .6s;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 25px;
+}
+
+/*--
 	Slider Start
 --*/
 #slider { /* 수정 */
@@ -808,6 +851,21 @@ font header .navbar-default .navbar-nav li a:hover {
   padding: 0px 50px;
 }
 
+/*--
+	To-Top(위로가기 아이콘) Start
+--*/
+
+.to_top {
+  display: none;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  padding: 4px;
+  cursor: pointer;
+  z-index: 9;    /* 다른요소들 보다 최상단에 위치 */
+}
 
 /*---------------------------------------------
 					Project Start
@@ -1303,25 +1361,6 @@ font header .navbar-default .navbar-nav li a:hover {
   font-weight: 300;
 }
 
-/*---------------------------------------------
-					To-Top Start
------------------------------------------------*/
-.to_top {
-  display: none;
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  border: 2px solid #333;
-  border-radius: 50%;
-  background-color: #fff;
-  padding: 4px;
-  cursor: pointer;
-  z-index: 9;    /* 다른요소들 보다 최상단에 위치 */
-}
-
-/*---------------------------------------------
-					To-Top end
------------------------------------------------*/
 
 /*---------------------------*/
 /*--
