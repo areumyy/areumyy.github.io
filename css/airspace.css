@@ -6,15 +6,21 @@
  * 
  */
 
-@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+/* @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 @import url(//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
-@import url(//fonts.googleapis.com/css?family=Volkhov:400italic);
+@import url(//fonts.googleapis.com/css?family=Volkhov:400italic); */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
 /* var text-decoration */
 /*--
 	Common Css
 --*/
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
 body {
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   -webkit-font-smoothing: antialiased;
   position: relative;
 }
@@ -24,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
 }
 h2 {
   font-size: 30px;
@@ -58,7 +64,7 @@ a:active {
   font-weight: 600;
 }
 .section-title p {
-  font-family: 'Volkhov', serif;
+  /* font-family: 'Volkhov', serif; */
   font-style: italic;
   color: #666;
 }
