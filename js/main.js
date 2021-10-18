@@ -139,6 +139,51 @@ emailEls.forEach((emailEl, index) => emailEl.addEventListener('click', function(
 	// }
 
 
+
+// info-floating-badge 위치이동 효과
+let badge = document.querySelector('.info_badge')
+
+window.addEventListener('scroll', function() {
+
+	if(window.scrollY > 90) {
+		gsap.to(badge, .2, {
+			y: -80
+		})
+	} else {
+		gsap.to(badge, .2, {
+			y: 0
+		})
+	}
+
+})
+
+
+// to-top 아이콘 위로가기 효과
+let totop = document.querySelector('.to_top')
+
+window.addEventListener('scroll', _.throttle(function() {
+
+	if(window.scrollY > 945) {
+		
+		gsap.to(totop, .2, {
+			display: 'block',
+			x: 0
+		})
+
+	} else {
+		
+		gsap.to(totop, .2, {
+			x: 100
+		})
+	}
+
+}, 300))
+
+totop.addEventListener('click', function(){
+	window.scrollTo({top: 0, behavior: 'smooth'})
+})
+
+
 // 메인 skill-section 애니메이션 효과 적용하기
 let skill = document.getElementById('service')
 let graphEls = skill.querySelectorAll('.graph')
@@ -175,45 +220,3 @@ window.addEventListener('scroll', _.throttle(function() {
 }, 300))
 
 
-// to-top 아이콘 위로가기 효과
-let totop = document.querySelector('.to_top')
-
-window.addEventListener('scroll', _.throttle(function() {
-
-	if(window.scrollY > 945) {
-		
-		gsap.to(totop, .2, {
-			display: 'block',
-			x: 0
-		})
-
-	} else {
-		
-		gsap.to(totop, .2, {
-			x: 100
-		})
-	}
-
-}, 300))
-
-totop.addEventListener('click', function(){
-	window.scrollTo({top: 0, behavior: 'smooth'})
-})
-
-
-// info-floating-badge 위치이동 효과
-let badge = document.querySelector('.info_badge')
-
-window.addEventListener('scroll', function() {
-
-	if(window.scrollY > 90) {
-		gsap.to(badge, .2, {
-			y: -80
-		})
-	} else {
-		gsap.to(badge, .2, {
-			y: 0
-		})
-	}
-
-})

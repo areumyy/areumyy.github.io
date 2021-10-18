@@ -884,6 +884,7 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-bottom: 107px;
   position: relative;
   height: 330px;
+  margin: 0;
 }
 .page-header.project-header {
   background: url("../img/project-bg.jpg") no-repeat;
@@ -1253,8 +1254,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	contact-form Start
 --*/
 #contact-form {
-  padding-top: 70px;
-  padding-bottom: 35px;
+  padding: 100px 0 120px;
 }
 #contact-form .block form .form-group {
   padding-bottom: 15px;
@@ -1330,7 +1330,6 @@ font header .navbar-default .navbar-nav li a:hover {
   background-color: #ff432e;
 }
 #contact-box {
-  padding-top: 35px;
   padding-bottom: 58px;
   text-align: center;
 }
