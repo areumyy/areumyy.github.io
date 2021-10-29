@@ -2,41 +2,27 @@
 layout: page
 ---
 
-<!-- Slider Start -->
-<section id="global-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <h3>latest work</h3>
-        </div>
+<div class="project">
+  <section id="intro" style="border: 1px dotted #ddd;">
+    <div class="container_box">
+      <div class="row">
+        <div>
+          <div class="block_p">
+            <!-- <h1>{{ page.title }}</h1>
+            <div class="post-info-wrapper">
+              <p class="italic">By <span class="bold">{{ page.author }}</span> on <span
+                  class="bold">{{ page.date | date: "%B %-d, %Y" }}</span></p>
+            </div>
+            <hr /> -->
+            {{ content }}
+          </div>
+        </div><!-- .col-md-7 close -->
       </div>
     </div>
-  </div>
-</section>
-
-<div class="project">
-  <!-- Wrapper Start -->
-  <section id="intro" style="border: 1px dotted #ddd;">
-    <!-- <div class="container"> -->
-      <div class="container_box">
-        <div class="row">
-          <div>
-            <div class="block_p">
-              <!-- <h1>{{ page.title }}</h1>
-              <div class="post-info-wrapper">
-                <p class="italic">By <span class="bold">{{ page.author }}</span> on <span
-                    class="bold">{{ page.date | date: "%B %-d, %Y" }}</span></p>
-              </div>
-              <hr /> -->
-              {{ content }}
-            </div>
-          </div><!-- .col-md-7 close -->
-        </div>
-      </div>
-    <!-- </div> -->
+    <p class="backTo">
+      <a href="{{ site.baseurl }}/project" class="back_icon">    
+        <span class="material-icons">chevron_left</span>Back to project
+      </a>
+    </p>   
   </section>
 </div>
-<p class="center-text" style="padding: 30px;">
-  <a href="{{ site.baseurl }}/project">Back to project</a>
-</p>

@@ -47,7 +47,8 @@ p {
 ul {
   padding: 0;
   margin: 0;
-  list-style: none;
+  list-style: disc;
+  list-style-position: inside;
 }
 a,
 a:active,
@@ -83,7 +84,15 @@ a:active {
   
   color: #fff;
 }
-
+pre {
+  line-height: 28px;
+  letter-spacing: .3px;
+  font-size: 14px;
+}
+li::marker {
+  display: block;
+  margin-left: 20px;
+}
 
 
 /*--
@@ -317,9 +326,12 @@ font header .navbar-default .navbar-nav li a:hover {
 } */
 #slider ul li .link {
   color: #fff;
+  transition: .4s;
 }
 #slider ul li .link:hover {
-  color: rgb(233, 155, 155);
+  /* color: #e99b9b; */
+  color: #f8b4b4;
+  transition: .4s;
 }
 
 
@@ -335,7 +347,6 @@ font header .navbar-default .navbar-nav li a:hover {
   margin: 0;
 }
 #intro .block p {
-  color: #7B7B7B;
   padding-top: 20px;
 }
 #intro .block img {
@@ -351,7 +362,29 @@ font header .navbar-default .navbar-nav li a:hover {
   font-family: inherit;
   font-weight: 600;
 }
-
+#intro .backTo {
+  text-align: center;
+  padding: 50px 0 0;
+}
+#intro .back_icon {
+  /* color: #999999; */
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#intro .back_icon .material-icons {
+  font-size: 18px;
+  margin-right: 10px;
+  transition: .4s;
+}
+#intro .back_icon:hover {
+  color: #2a6496;
+}
+#intro .back_icon:hover .material-icons {
+  margin-right: 0;
+  transition: .4s;
+}
 
 
 /*--
@@ -402,7 +435,7 @@ font header .navbar-default .navbar-nav li a:hover {
   position: absolute;
   top: 0;
   left: 5px;
-  height: 100%;
+  height: 90%;
   width: 4px;
   background-color: rgb(207, 207, 207);
 }
@@ -837,11 +870,13 @@ font header .navbar-default .navbar-nav li a:hover {
   margin-right: 10px;
 }
 #testimonial .more-post a:hover {
-  color: rgb(233, 155, 155);
+  /* color: rgb(233, 155, 155); */
+  color: #2a6496;
 }
 #testimonial .more-post a:hover .material-icons {
   margin-right: 0;
-  color: rgb(233, 155, 155);
+  /* color: rgb(233, 155, 155); */
+  color: #2a6496;
   transition: margin-right .4s;
 }
 
@@ -1197,6 +1232,41 @@ font header .navbar-default .navbar-nav li a:hover {
 -----------------------------------------------*/
 
 /* 블로그 구간입니다 */
+/*--
+	MarkDown
+--*/
+.post .block img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.post .container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.post img + em {
+  display: block;
+  margin: 20px auto;
+  padding: 0 5px;
+  color: #d28989;
+  background-color: #f7e6e6;
+  width: fit-content;
+  border-radius: 5px;
+  font-style: initial;
+}
+
+#intro .block blockquote {
+  margin: 0 0 10px;
+}
+#intro .block blockquote p {
+  padding-top: 0px;
+}
+.post ul li {
+  font-size: 14px;
+  line-height: 30px;
+}
 
 /*---------------------------------------------
 					Blog Close
