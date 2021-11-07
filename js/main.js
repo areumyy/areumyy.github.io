@@ -185,7 +185,7 @@ totop.addEventListener('click', function(){
 
 
 // 메인 skill-section 애니메이션 효과 적용하기
-let skill = document.getElementById('service')
+let skill = document.getElementById('skill')
 let graphEls = skill.querySelectorAll('.graph')
 
 console.log('skill >>> ', skill)
@@ -201,8 +201,7 @@ window.addEventListener('scroll', _.throttle(function() {
 			
 			gsap.to(graphEls[i], 1, {
 				width: graphEls[i].dataset.width +'%',
-				height: '7px',
-				backgroundColor: 'skyblue'
+				height: '7px'
 			});
 		}
 

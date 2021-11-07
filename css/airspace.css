@@ -1,21 +1,13 @@
-/*
- * This is the main css file that ships with the airspace theme.
- * In airspace, it is called style.css
- * However, style.css now holds additional styles for this jekyll port. (Not written by ThemeFisher)
- * The original style.css is now called airspace.css
- * 
- */
-
 /* @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 @import url(//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
 @import url(//fonts.googleapis.com/css?family=Volkhov:400italic); */
 
+/* Font */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
 
-/* var text-decoration */
-/*--
-	Common Css
---*/
+/*---------------------------------------------
+					Common Css
+-----------------------------------------------*/
 * {
   font-family: 'Noto Sans KR', sans-serif;
 }
@@ -95,9 +87,9 @@ li::marker {
 }
 
 
-/*--
-	Header Start
---*/
+/*---------------------------------------------
+					Header Start
+-----------------------------------------------*/
 header {
   background: #fff;
   padding: 20px 0;
@@ -124,11 +116,9 @@ header .navbar-default .navbar-nav li a {
 font header .navbar-default .navbar-nav li a:hover {
   color: #000;
 }
-/*---------------------------------------------
-					Index Start
------------------------------------------------*/
+
 /*--
-	Info Floating Badge Start
+	Info Floating Badge
 --*/
 .info_badge {
   position: fixed;
@@ -170,9 +160,13 @@ font header .navbar-default .navbar-nav li a:hover {
   margin-top: 25px;
 }
 
-/*--
-	Slider Start
---*/
+
+/*---------------------------------------------
+					Index-Page Start
+-----------------------------------------------*/
+/*----------------
+	Slider-Section
+----------------*/
 #slider { /* 수정 */
   background: url("../img/slider-bg.jpg") no-repeat;
   background-size: cover;
@@ -218,36 +212,6 @@ font header .navbar-default .navbar-nav li a:hover {
   font-weight: 300;
   letter-spacing: 3px;
 }
-
-/* medal start */
-#slider .profile_medal {
-  width: 180px;
-  height: 180px;
-  perspective: 600px;   /* 3D 원근감 */
-  margin: auto;
-}
-#slider .profile_medal .front,
-#slider .profile_medal .back { /* 다중선택자 */
-  width: inherit;
-  height: inherit;
-  position: absolute;   /* 부모요소인 .medal에 가로/세로 너비가 지정되어있어서 ok */
-  transition: 1s;
-  backface-visibility: hidden;  /* 180도 회전되어있는 것(뒤집어져있는)은 hidden으로 숨김 */
-}
-#slider .profile_medal .front {
-  transform: rotateY(0deg);     /* 명시적으로 0도에서 시작한다고 작성 */
-}
-#slider .profile_medal:hover .front {
-  transform: rotateY(180deg);   /* 오른쪽 방향으로 180도 꺾임 */
-}
-#slider .profile_medal .back {
-  transform: rotateY(-180deg);  /* 왼쪽 방향으로 180도 꺾여있음 */
-}
-#slider .profile_medal:hover .back {
-  transform: rotateY(0deg);
-}
-/* medal end */
-
 #slider .profile_img {  /* 추가 */
   width: 180px;
   border-radius: 50%;
@@ -334,63 +298,93 @@ font header .navbar-default .navbar-nav li a:hover {
   transition: .4s;
 }
 
-
 /*--
-	wrapper Start
+	Slider-Profile Medal
 --*/
-#intro {
+#slider .profile_medal {
+  width: 180px;
+  height: 180px;
+  perspective: 600px;   /* 3D 원근감 */
+  margin: auto;
+}
+#slider .profile_medal .front,
+#slider .profile_medal .back { /* 다중선택자 */
+  width: inherit;
+  height: inherit;
+  position: absolute;   /* 부모요소인 .medal에 가로/세로 너비가 지정되어있어서 ok */
+  transition: 1s;
+  backface-visibility: hidden;  /* 180도 회전되어있는 것(뒤집어져있는)은 hidden으로 숨김 */
+}
+#slider .profile_medal .front {
+  transform: rotateY(0deg);     /* 명시적으로 0도에서 시작한다고 작성 */
+}
+#slider .profile_medal:hover .front {
+  transform: rotateY(180deg);   /* 오른쪽 방향으로 180도 꺾임 */
+}
+#slider .profile_medal .back {
+  transform: rotateY(-180deg);  /* 왼쪽 방향으로 180도 꺾여있음 */
+}
+#slider .profile_medal:hover .back {
+  transform: rotateY(0deg);
+}
+
+
+/*----------------
+	AboutMe-Section
+----------------*/
+#aboutMe {
   padding: 100px 0;
 }
-#intro .block h2 {
+#aboutMe .block h2 {
   padding-top: 35px;
   line-height: 27px;
   margin: 0;
 }
-#intro .block p {
+#aboutMe .block p {
   padding-top: 20px;
 }
-#intro .block img {
+#aboutMe .block img {
   padding-left: 40px;
   width: 100%;
 }
-#intro .section-title {
+#aboutMe .section-title {
   margin-bottom: 0px;
 }
-#intro .section-title p {
+#aboutMe .section-title p {
   padding-top: 20px;
   font-style: normal;
   font-family: inherit;
   font-weight: 600;
 }
-#intro .backTo {
+.backTo {
   text-align: center;
   padding: 50px 0 0;
 }
-#intro .back_icon {
+.back_icon {
   /* color: #999999; */
   color: #333;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#intro .back_icon .material-icons {
+.back_icon .material-icons {
   font-size: 18px;
   margin-right: 10px;
   transition: .4s;
 }
-#intro .back_icon:hover {
+.back_icon:hover {
   color: #2a6496;
 }
-#intro .back_icon:hover .material-icons {
+.back_icon:hover .material-icons {
   margin-right: 0;
   transition: .4s;
 }
 
 
-/*--
-	Feature Start
---*/
-#feature {
+/*----------------
+	History-Section
+----------------*/
+#history {
   background: url("../img/featue-bg.jpg");
   background-position: 50% 94px;
   width: 100%;
@@ -412,25 +406,16 @@ font header .navbar-default .navbar-nav li a:hover {
   backface-visibility: hidden;
   padding: 100px 0;
 }
-#feature h2 {
+#history h2 {
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 30px;
 }
-/* #feature p {
-  color: #8d8f92;
-  margin-bottom: 20px;
-}
-#feature .btn-view-works {
-  background: #655E7A;
-  color: #fff;
-  padding: 10px 20px;
-} */
-#feature .history_box {
+#history .history_box {
   position: relative;
   font-size: 15px;
 }
-#feature ul:before {
+#history ul:before {
   content: '';
   position: absolute;
   top: 0;
@@ -439,11 +424,11 @@ font header .navbar-default .navbar-nav li a:hover {
   width: 4px;
   background-color: rgb(207, 207, 207);
 }
-#feature .history_list {
+#history .history_list {
   display: flex;
   margin-bottom: 20px;
 }
-#feature .history_list:before {
+#history .history_list:before {
   content: '';
   width: 15px;
   height: 15px;
@@ -453,66 +438,54 @@ font header .navbar-default .navbar-nav li a:hover {
   border: 3px solid;
   z-index: 1;
 }
-#feature .history_content {
-  
-}
 
 
-
-/*--
-	service Start
---*/
-#service {
+/*----------------
+	Skill-Section
+-----------------*/
+#skill {
   text-align: center;
   padding: 90px 0;
 }
-#service .service-item {
+#skill .skill-item {
   padding-bottom: 30px;
 }
-#service .service-item i {
+#skill .skill-item i {
   font-size: 60px;
   color: #4A4656;
 }
-#service .service-item h4 {
+#skill .skill-item h4 {
   padding-top: 20px;
   margin: 0;
   color: #666;
 }
-#service .service-item p {
+#skill .skill-item p {
   color: #888;
-  padding-top: 10px;
+  padding: 15px 0;
   margin: 0;
   font-size: 14px;
   line-height: 1.8;
 }
-#service .skill_icon {
+#skill .skill_icon {
   width: 80px;
 }
-#service .service-item .percent_box {
-  
-}
-#service .service-item .percent_box p {
-  margin-bottom: 5px;
-}
-#service .service-item .percent_box .percent_inner {
+#skill .skill-item .percent_box .percent_inner {
   width: 100%;
   height: 7px;
   background-color: #ccc;
   border-radius: 10px;
 }
-#service .service-item .percent_box .graph {
-  /* width: 70%; */
-  /* height: inherit;
-  background-color: lightblue;
+#skill .skill-item .percent_box .percent_inner .graph {
+  height: 7px;
   border-radius: 10px;
-  transition: .4s; */
+  background-color: skyblue;
 }
 
 
-/*--
-	call-to-action Start
---*/
-#project-section {
+/*----------------
+	Project-Section
+----------------*/
+#project {
   background: url("../img/call-to-action-bg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -522,7 +495,7 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #fff;
   height: 430px;
 }
-#project-section:before {
+#project:before {
   content: "";
   position: absolute;
   left: 0;
@@ -534,58 +507,45 @@ font header .navbar-default .navbar-nav li a:hover {
   background: #1d192c;
   opacity: 0.8;
 }
-#project-section h2 {
+#project h2 {
   padding-bottom: 30px;
   line-height: 33px;
   margin: 0;
   font-size: 30px;
 }
-/* #project-section p {
-  font-size: 14px;
-  line-height: 1.6;
-}
-#project-section .btn-call-to-action {
-  padding: 15px 35px;
-  border: none;
-  background-color: #fff;
-  font-size: 15px;
-  color: #333333; 
-  margin-top: 30px;
-} */
 
 /* 여기부터 */
-#project-section .swiper-container {
+#project .swiper-container {
   /* width: calc(330px * 3 + 20px); */
   width: inherit;
   height: 200px;
   /* background-color: orange; */
   overflow: hidden;
- 
 }
-#project-section .swiper-container .swiper-wrapper{
+#project .swiper-container .swiper-wrapper{
   
 }
-#project-section .swiper-container .swiper-wrapper .swiper-slide {
+#project .swiper-container .swiper-wrapper .swiper-slide {
   opacity: .2;
   transition: opacity 1s;
 }
-#project-section .swiper-container .swiper-wrapper .swiper-slide-active {
+#project .swiper-container .swiper-wrapper .swiper-slide-active {
   opacity: 1;
   cursor: pointer;
 }
-#project-section .swiper-container .swiper-wrapper .swiper-slide-active:nth-child(3) {
+#project .swiper-container .swiper-wrapper .swiper-slide-active:nth-child(3) {
   margin-right: 0;
 }
-#project-section .swiper-container .swiper-wrapper .swiper-slide .project_img {
+#project .swiper-container .swiper-wrapper .swiper-slide .project_img {
   width: inherit;
   height: inherit;
 }
-#project-section .swiper-pagination {
+#project .swiper-pagination {
   bottom: auto;
   margin-top: 30px;
 }
-#project-section .swiper-prev, 
-#project-section .swiper-next {
+#project .swiper-prev, 
+#project .swiper-next {
   width: 30px;
   height: 30px;
   /* background-color: orange; */
@@ -599,26 +559,25 @@ font header .navbar-default .navbar-nav li a:hover {
   z-index: 1;
   top: 50%;
 }
-#project-section .swiper-prev:hover, 
-#project-section .swiper-next:hover {
+#project .swiper-prev:hover, 
+#project .swiper-next:hover {
   background-color: #fff;
   color: #333;
   transition: .4s;
 }
-#project-section .swiper-prev {
+#project .swiper-prev {
   left: 50%;
   margin-left: -250px;
 }
-#project-section .swiper-next {
+#project .swiper-next {
   right: 50%;
   margin-right: -250px;
 }
-
       /* hover */
-#project-section .swiper-container .swiper-wrapper .swiper-slide-active:hover .overly {
+#project .swiper-container .swiper-wrapper .swiper-slide-active:hover .overly {
   opacity: 1;
 }
-#project-section .swiper-container .swiper-wrapper .swiper-slide-active:hover .position-center {
+#project .swiper-container .swiper-wrapper .swiper-slide-active:hover .position-center {
   position: absolute;
   top: 50%;
   -webkit-transform: translate(0%, -50%);
@@ -626,7 +585,7 @@ font header .navbar-default .navbar-nav li a:hover {
   -ms-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
 }
-#project-section .swiper-container .swiper-wrapper .swiper-slide-active .overly {
+#project .swiper-container .swiper-wrapper .swiper-slide-active .overly {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -639,7 +598,7 @@ font header .navbar-default .navbar-nav li a:hover {
   transition: .3s all;
   text-align: center;
 }
-#project-section .swiper-container .swiper-wrapper .swiper-slide-active .position-center {
+#project .swiper-container .swiper-wrapper .swiper-slide-active .position-center {
   position: absolute;
   width: 100%;
   top: 50%;
@@ -654,29 +613,27 @@ font header .navbar-default .navbar-nav li a:hover {
   -o-transition: .5s all;
   transition: .5s all;
 }
-
-#project-section .swiper-container .swiper-wrapper .swiper-slide-active h2 {
+#project .swiper-container .swiper-wrapper .swiper-slide-active h2 {
   font-size: 22px;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding-bottom: 15px;
 }
-#project-section .swiper-container .swiper-wrapper .swiper-slide-active p { /* 수정 */
+#project .swiper-container .swiper-wrapper .swiper-slide-active p { /* 수정 */
   font-size: 14px;
   margin-bottom: 0;
 }
 
-#project-section .swiper-container .swiper-wrapper .swiper-slide-active .stacks_box {
+#project .swiper-container .swiper-wrapper .swiper-slide-active .stacks_box {
   margin-bottom: 15px;
 }
-#project-section .swiper-container .swiper-wrapper .swiper-slide-active .stacks_icon {
+#project .swiper-container .swiper-wrapper .swiper-slide-active .stacks_icon {
   width: auto;
   height: auto;
 }
-
 /* 여기까지 */
 
-.project_box {
+/* .project_box {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -685,28 +642,28 @@ font header .navbar-default .navbar-nav li a:hover {
   width: 30%;
   margin-right: 20px;
 }
-/* .project_box li:hover {
-  background-color: #2C2C2C;
-  opacity: .1;
-} */
-/* .project_img {
-  width: 100%;
-} */
+.project_box li:hover {
+  background-color: #2C2C2C;   생략
+  opacity: .1;   생략
+}
+.project_img {
+  width: 100%;   생략
+}
 .project_box li:nth-child(3) {
   margin-right: 0px;
 }
-#project-section .block ul li {
-  /* float: left; */
-  /* width: 32.22%; */
+#project .block ul li {
+  float: left;   생략
+  width: 32.22%;   생략
   width: 32%;
   overflow: hidden;
   margin: 6px;
   position: relative;
 }
-#project-section .block ul li:hover .overly {
+#project .block ul li:hover .overly {
   opacity: 1;
 }
-#project-section .block ul li:hover .position-center {
+#project .block ul li:hover .position-center {
   position: absolute;
   top: 50%;
   -webkit-transform: translate(0%, -50%);
@@ -714,7 +671,7 @@ font header .navbar-default .navbar-nav li a:hover {
   -ms-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
 }
-#project-section .block .project_box li .overly {
+#project .block .project_box li .overly {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -727,11 +684,11 @@ font header .navbar-default .navbar-nav li a:hover {
   transition: .3s all;
   text-align: center;
 }
-#project-section .block .project_box .position-center {
+#project .block .project_box .position-center {
   position: absolute;
   width: 100%;
   top: 50%;
-  /* left: 10%; */
+  left: 10%;  생략
   padding: 0 10px;
   text-align: center;
   -webkit-transform: translate(0%, 50%);
@@ -742,88 +699,125 @@ font header .navbar-default .navbar-nav li a:hover {
   -o-transition: .5s all;
   transition: .5s all;
 }
-
-#project-section .block ul li h2 {
+#project .block ul li h2 {
   font-size: 22px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-#project-section .block ul li p { /* 수정 */
+#project .block ul li p { 
   font-size: 14px;
   margin-bottom: 0;
 }
-
-#project-section .block ul li .stacks_box {
+#project .block ul li .stacks_box {
   margin-bottom: 15px;
 }
-#project-section .block ul li .stacks_icon {
+#project .block ul li .stacks_icon {
   width: auto;
   height: auto;
-}
+} */
 
 
-/*--
-	content Start
---*/
-#testimonial {
+/*----------------
+	Blog-Section
+----------------*/
+#blog {
   padding: 100px 0;
 }
-#testimonial .block h2 {
+#blog .blog-inner {
+  width: 100%;
+  min-height: 100px;
+  background-color: white;
+  border-bottom: 1px dotted #ddd;
+}
+#blog .blog-inner a:link, .blog-inner a:visited {
+  font-size: 30px;
+  color: #333;
+}
+#blog .blog-inner a:hover {
+  color: #0D0017;
+}
+#blog .more-blog {
+  text-align: center;
+  padding: 20px 0;
+}
+#blog .more-blog a {
+  font-size: 15px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blog .more-blog .material-icons {
+  font-size: 18px;
+  color: #000;
+  margin-right: 10px;
+}
+#blog .more-blog a:hover {
+  /* color: rgb(233, 155, 155); */
+  color: #2a6496;
+}
+#blog .more-blog a:hover .material-icons {
+  margin-right: 0;
+  /* color: rgb(233, 155, 155); */
+  color: #2a6496;
+  transition: margin-right .4s;
+}
+/* #blog .block h2 {
   line-height: 27px;
   color: #5C5C5C;
   padding-top: 110px;
 }
-#testimonial .block p {
+#blog .block p {
   padding-top: 50px;
   color: #7B7B7B;
 }
-#testimonial .counter-box li {
+#blog .counter-box li {
   width: 50%;
   float: left;
   text-align: center;
   margin: 30px 0 30px;
 }
-#testimonial .counter-box li i {
+#blog .counter-box li i {
   font-size: 35px;
 }
-#testimonial .counter-box li h4 {
+#blog .counter-box li h4 {
   font-size: 30px;
   font-weight: bold;
 }
-#testimonial .counter-box li span {
+#blog .counter-box li span {
   color: #555;
 }
-#testimonial .testimonial-carousel {
+#blog .testimonial-carousel {
   text-align: center;
   width: 75%;
   border: 1px solid #DEDEDE;
   padding: 24px;
   margin: 0 auto;
 }
-#testimonial .testimonial-carousel img {
+#blog .testimonial-carousel img {
   padding-bottom: 38px;
 }
-#testimonial .testimonial-carousel p {
+#blog .testimonial-carousel p {
   line-height: 28px;
   font-weight: 300;
   padding-bottom: 20px;
 }
-#testimonial .testimonial-carousel .user img {
+#blog .testimonial-carousel .user img {
   padding-bottom: 0px;
   border-radius: 500px;
 }
-#testimonial .testimonial-carousel .user p {
+#blog .testimonial-carousel .user p {
   padding-bottom: 0;
   font-size: 12px;
   line-height: 20px;
   color: #353241;
 }
-#testimonial .testimonial-carousel .user p span {
+#blog .testimonial-carousel .user p span {
   display: block;
   color: #353241;
   font-weight: 600;
 }
-#testimonial .testimonial-carousel .owl-carousel .owl-pagination div {
+#blog .testimonial-carousel .owl-carousel .owl-pagination div {
   border: 1px solid #1D1D1D;
   border-radius: 500px;
   display: inline-block;
@@ -831,89 +825,17 @@ font header .navbar-default .navbar-nav li a:hover {
   margin-right: 15px;
   width: 10px;
 }
-#testimonial .testimonial-carousel .owl-carousel .owl-pagination div.active {
+#blog .testimonial-carousel .owl-carousel .owl-pagination div.active {
   background: #5C5C5C;
   font-size: 30px;
   display: inline-block;
   border: 0px;
-}
+} */
 
-#testimonial .post-inner {
-  width: 100%;
-  min-height: 100px;
-  background-color: white;
-  border-bottom: 1px dotted #ddd;
-}
-#testimonial .post-inner a:link, .post-inner a:visited {
-  font-size: 30px;
-  color: #333;
-}
-
-#testimonial .post-inner a:hover {
-  color: #0D0017;
-}
-
-#testimonial .more-post {
-  text-align: center;
-  padding: 20px 0;
-}
-#testimonial .more-post a {
-  font-size: 15px;
-  color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#testimonial .more-post .material-icons {
-  font-size: 18px;
-  color: #000;
-  margin-right: 10px;
-}
-#testimonial .more-post a:hover {
-  /* color: rgb(233, 155, 155); */
-  color: #2a6496;
-}
-#testimonial .more-post a:hover .material-icons {
-  margin-right: 0;
-  /* color: rgb(233, 155, 155); */
-  color: #2a6496;
-  transition: margin-right .4s;
-}
-
-
-/*--
-	features Start
---*/
-#clients-logo-section {
-  padding-top: 30px;
-  padding-bottom: 75px;
-}
-#clients-logo-section .clients-logo-img {
-  padding: 0px 50px;
-}
-
-/*--
-	To-Top(위로가기 아이콘) Start
---*/
-
-.to_top {
-  display: none;
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  border: 2px solid #333;
-  border-radius: 50%;
-  padding: 4px;
-  cursor: pointer;
-  z-index: 9;    /* 다른요소들 보다 최상단에 위치 */
-}
 
 /*---------------------------------------------
-					Project Start
+					Project-Page Start
 -----------------------------------------------*/
-/*--
-	Slider-work Start
---*/
 .page-header {
   padding-top: 150px;
   padding-bottom: 107px;
@@ -924,17 +846,6 @@ font header .navbar-default .navbar-nav li a:hover {
 .page-header.project-header {
   background: url("../img/project-bg.jpg") no-repeat;
   background-position: 0 -120px;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.page-header.blog-header {
-  background: url("../img/blog-bg.jpg") no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.page-header.contact-header {
-  background: url("../img/contact-bg.jpg") no-repeat;
-  background-position: 0 -80px;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -971,15 +882,8 @@ font header .navbar-default .navbar-nav li a:hover {
   word-spacing: 3px;
 }
 
-.post-box {
-  width: 1170px;
-  margin: auto;
-  padding: 40px 0 80px 0;
-}
-
-
 /*--
-	portfolio-work Start
+	portfolio-work
 --*/
 #portfolio-work {
   overflow: hidden;
@@ -1084,9 +988,10 @@ font header .navbar-default .navbar-nav li a:hover {
   font-size: 13px;
   color: #655E7A;
 }
-/* 
-  overly Stacks 이미지
-*/
+
+/*--
+  overly Stacks Image
+--*/
 #portfolio-work .block .portfolio-contant ul img {
   width: 100%;
   height: auto;
@@ -1122,7 +1027,6 @@ font header .navbar-default .navbar-nav li a:hover {
 #portfolio-work .block .mix {
   display: none;
 }
-/* Overly Stacks Image */
 #portfolio-work .block .portfolio-contant .stacks_box {
   margin-bottom: 15px;
 }
@@ -1131,8 +1035,252 @@ font header .navbar-default .navbar-nav li a:hover {
   height: auto;
 }
 
+/*----------------
+	MarkDown
+----------------*/
+.project #intro {
+  padding: 100px 0;
+}
+.project .block_p img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.project .container_box {
+  width: 800px;
+  margin: 0 auto;
+}
+.project img + em {
+  display: block;
+  margin: 20px auto;
+  padding: 0 5px;
+  color: #d28989;
+  background-color: #f7e6e6;
+  width: fit-content;
+  border-radius: 5px;
+  font-style: initial;
+}
+
+
+/*---------------------------------------------
+					Blog-Page Start
+-----------------------------------------------*/
+.page-header.blog-header {
+  background: url("../img/blog-bg.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.post-box {
+  width: 1170px;
+  margin: auto;
+  padding: 40px 0 80px 0;
+}
+
+/*----------------
+	MarkDown
+---------------*/
+.post #intro {
+  padding: 100px 0;
+}
+.post #intro .block p {
+  padding-top: 20px;
+}
+.post #intro .block blockquote {
+  margin: 0 0 10px;
+}
+.post #intro .block blockquote p {
+  padding-top: 0px;
+}
+.post ul li {
+  font-size: 14px;
+  line-height: 30px;
+}
+.post .block img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.post .container {
+  width: 800px;
+  margin: 0 auto;
+}
+.post img + em {
+  display: block;
+  margin: 20px auto;
+  padding: 0 5px;
+  color: #d28989;
+  background-color: #f7e6e6;
+  width: fit-content;
+  border-radius: 5px;
+  font-style: initial;
+}
+
+
+/*---------------------------------------------
+					Contact-Page Start
+-----------------------------------------------*/
+.page-header.contact-header {
+  background: url("../img/contact-bg.jpg") no-repeat;
+  background-position: 0 -80px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#contact-form {
+  padding: 100px 0 120px;
+}
+#contact-form .block form .form-group {
+  padding-bottom: 15px;
+  margin: 0px;
+}
+#contact-form .block form .form-group .form-control {
+  background: #F6F8FA;
+  height: 60px;
+  border: 1px solid #EEF2F6;
+  box-shadow: none;
+  width: 100%;
+}
+#contact-form .block form .form-group-2 {
+  padding-bottom: 15px;
+  margin: 0px;
+}
+#contact-form .block form .form-group-2 textarea {
+  background: #F6F8FA;
+  height: 135px;
+  border: 1px solid #EEF2F6;
+  box-shadow: none;
+  width: 100%;
+}
+#contact-form .block button {
+  width: 100%;
+  height: 60px;
+  background: #47424C;
+  border: none;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+#contact-box {
+  padding-bottom: 58px;
+  text-align: center;
+}
+#contact-box .block img {
+  width: 100%;
+}
+#contact-box .block h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #000;
+  font-size: 28px;
+  padding-bottom: 30px;
+}
+#contact-box .block p {
+  color: #5C5C5C;
+  display: block;
+}
+.address-block {
+  list-style: none;
+}
+.address-block li {
+  margin-bottom: 20px;
+}
+.address-block li i {
+  margin-right: 15px;
+  font-size: 20px;
+  width: 20px;
+}
+.address-block .contact_icon {
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+}
+.address-block li .link {
+  color: #333;
+}
+
+
+/*---------------------------------------------
+					Footer Start
+-----------------------------------------------*/
+footer {
+  background: #F5F5F5;
+  text-align: center;
+  padding-top: 48px;
+  padding-bottom: 55px;
+}
+footer p {
+  font-size: 13px;
+  line-height: 25px;
+  color: #919191;
+}
+footer a {
+  color: #595959;
+}
+footer .footer-manu {
+  padding-bottom: 25px;
+}
+footer .footer-manu ul {
+  margin: 0px;
+  padding: 0px;
+}
+footer .footer-manu ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+footer .footer-manu ul li a {
+  display: inline-block;
+  color: #494949;
+}
+footer .footer-manu ul li a:hover {
+  color: #000;
+}
+footer .row-footer {
+  display: flex;
+  /* margin-right: -15px;
+  margin-left: -15px; */
+}
+
 /*--
-	wrapper-work Start
+	To-Top(위로가기 아이콘)
+--*/
+.to_top {
+  display: none;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  padding: 4px;
+  cursor: pointer;
+  z-index: 9;    /* 다른요소들 보다 최상단에 위치 */
+}
+
+
+
+/*---------------------------------------------
+					위치 미상
+-----------------------------------------------*/
+/*--
+	Heading
+--*/
+.heading {
+  padding-bottom: 60px;
+  text-align: center;
+}
+.heading h2 {
+  color: #000;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 400;
+}
+.heading p {
+  font-size: 18px;
+  line-height: 40px;
+  color: #292929;
+  font-weight: 300;
+}
+
+/*--
+	wrapper-work
 --*/
 #wrapper-work {
   overflow: hidden;
@@ -1181,8 +1329,9 @@ font header .navbar-default .navbar-nav li a:hover {
   font-weight: 300;
   padding-right: 80px;
 }
+
 /*--
-	features-work Start
+	features-work
 --*/
 #features-work {
   padding-top: 50px;
@@ -1195,234 +1344,8 @@ font header .navbar-default .navbar-nav li a:hover {
   padding: 40px 0px;
 }
 
-
 /*--
-	MarkDown
---*/
-.project .block_p img {
-  width: 80%;
-  display: block;
-  margin: 0 auto;
-}
-
-.project .container_box {
-  width: 800px;
-  margin: 0 auto;
-}
-
-.project img + em {
-  display: block;
-  margin: 20px auto;
-  padding: 0 5px;
-  color: #d28989;
-  background-color: #f7e6e6;
-  width: fit-content;
-  border-radius: 5px;
-  font-style: initial;
-}
-
-
-/*---------------------------------------------
-					Project Close
------------------------------------------------*/
-
-/*=============================================*/
-
-/*---------------------------------------------
-					Blog Start
------------------------------------------------*/
-
-/* 블로그 구간입니다 */
-/*--
-	MarkDown
---*/
-.post .block img {
-  width: 80%;
-  display: block;
-  margin: 0 auto;
-}
-
-.post .container {
-  width: 800px;
-  margin: 0 auto;
-}
-
-.post img + em {
-  display: block;
-  margin: 20px auto;
-  padding: 0 5px;
-  color: #d28989;
-  background-color: #f7e6e6;
-  width: fit-content;
-  border-radius: 5px;
-  font-style: initial;
-}
-
-#intro .block blockquote {
-  margin: 0 0 10px;
-}
-#intro .block blockquote p {
-  padding-top: 0px;
-}
-.post ul li {
-  font-size: 14px;
-  line-height: 30px;
-}
-
-/*---------------------------------------------
-					Blog Close
------------------------------------------------*/
-
-/*=============================================*/
-
-/*---------------------------------------------
-					 Contact Start
------------------------------------------------*/
-/*--
-	slider-contact Start
---*/
-#slider-contact {
-  background: url("../img/slider-bg.jpg") no-repeat;
-  background-size: cover;
-  padding-top: 150px;
-  padding-bottom: 107px;
-  position: relative;
-}
-#slider-contact:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to left, #928dab, #1f1c2c 70%);
-  opacity: 0.8;
-}
-#slider-contact .block {
-  color: #E3E3E4;
-  margin: 0 auto;
-  padding-left: 90px;
-}
-#slider-contact .block h1 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  font-size: 45px;
-  line-height: 60px;
-  letter-spacing: 6px;
-  padding-bottom: 15px;
-}
-#slider-contact .block p {
-  font-size: 23px;
-  line-height: 40px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  letter-spacing: 1px;
-  word-spacing: 3px;
-}
-/*--
-	contact-form Start
---*/
-#contact-form {
-  padding: 100px 0 120px;
-}
-#contact-form .block form .form-group {
-  padding-bottom: 15px;
-  margin: 0px;
-}
-#contact-form .block form .form-group .form-control {
-  background: #F6F8FA;
-  height: 60px;
-  border: 1px solid #EEF2F6;
-  box-shadow: none;
-  width: 100%;
-}
-#contact-form .block form .form-group-2 {
-  padding-bottom: 15px;
-  margin: 0px;
-}
-#contact-form .block form .form-group-2 textarea {
-  background: #F6F8FA;
-  height: 135px;
-  border: 1px solid #EEF2F6;
-  box-shadow: none;
-  width: 100%;
-}
-#contact-form .block button {
-  width: 100%;
-  height: 60px;
-  background: #47424C;
-  border: none;
-  color: #fff;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-}
-/*--
-	wrapper-contact Start
---*/
-.address-block {
-  list-style: none;
-}
-.address-block li {
-  margin-bottom: 20px;
-}
-.address-block li i {
-  margin-right: 15px;
-  font-size: 20px;
-  width: 20px;
-}
-/* .address-block .contact_icon {
-  margin-right: 15px;
-  width: 20px;
-  height: 20px;
-} */
-.address-block li .link {
-  color: #333;
-}
-.social-icons {
-  margin-top: 40px;
-}
-.social-icons li {
-  display: inline-block;
-  margin: 0 6px;
-}
-.social-icons a {
-  display: inline-block;
-}
-.social-icons i {
-  color: #2C2C2C;
-  margin-right: 25px;
-  font-size: 25px;
-}
-.google-map {
-  position: relative;
-}
-.google-map #map {
-  width: 100%;
-  height: 300px;
-  background-color: #ff432e;
-}
-#contact-box {
-  padding-bottom: 58px;
-  text-align: center;
-}
-#contact-box .block img {
-  width: 100%;
-}
-#contact-box .block h2 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  color: #000;
-  font-size: 28px;
-  padding-bottom: 30px;
-}
-#contact-box .block p {
-  color: #5C5C5C;
-  display: block;
-}
-/*--
-	features-contact Start
+	features-contact
 --*/
 #features-contact {
   padding-top: 50px;
@@ -1433,69 +1356,4 @@ font header .navbar-default .navbar-nav li a:hover {
   text-align: center;
   display: inline-block;
   padding: 40px 0px;
-}
-/*---------------------------------------------
-					Contact Close
------------------------------------------------*/
-/*--------- Heading------------*/
-.heading {
-  padding-bottom: 60px;
-  text-align: center;
-}
-.heading h2 {
-  color: #000;
-  font-size: 30px;
-  line-height: 40px;
-  font-weight: 400;
-}
-.heading p {
-  font-size: 18px;
-  line-height: 40px;
-  color: #292929;
-  font-weight: 300;
-}
-
-
-/*---------------------------*/
-/*--
-	footer Start
---*/
-footer {
-  background: #F5F5F5;
-  text-align: center;
-  padding-top: 48px;
-  padding-bottom: 55px;
-}
-footer p {
-  font-size: 13px;
-  line-height: 25px;
-  color: #919191;
-}
-footer a {
-  color: #595959;
-}
-footer .footer-manu {
-  padding-bottom: 25px;
-}
-footer .footer-manu ul {
-  margin: 0px;
-  padding: 0px;
-}
-footer .footer-manu ul li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-footer .footer-manu ul li a {
-  display: inline-block;
-  color: #494949;
-}
-footer .footer-manu ul li a:hover {
-  color: #000;
-}
-
-footer .row-footer {
-  display: flex;
-  /* margin-right: -15px;
-  margin-left: -15px; */
-
 }
