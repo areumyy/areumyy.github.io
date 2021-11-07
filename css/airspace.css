@@ -168,7 +168,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	Slider-Section
 ----------------*/
 #slider { /* 수정 */
-  background: url("../img/slider-bg.jpg") no-repeat;
+  background: url("../img/main/slider-bg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: 10% 0%;
@@ -385,7 +385,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	History-Section
 ----------------*/
 #history {
-  background: url("../img/featue-bg.jpg");
+  background: url("../img/main/history-bg.jpg");
   background-position: 50% 94px;
   width: 100%;
   display: block;
@@ -486,7 +486,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	Project-Section
 ----------------*/
 #project {
-  background: url("../img/call-to-action-bg.jpg") no-repeat;
+  background: url("../img/main/project-bg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   padding: 70px 0px;
@@ -844,7 +844,7 @@ font header .navbar-default .navbar-nav li a:hover {
   margin: 0;
 }
 .page-header.project-header {
-  background: url("../img/project-bg.jpg") no-repeat;
+  background: url("../img/project/project-cover.jpg") no-repeat;
   background-position: 0 -120px;
   background-size: cover;
   background-attachment: fixed;
@@ -1066,7 +1066,7 @@ font header .navbar-default .navbar-nav li a:hover {
 					Blog-Page Start
 -----------------------------------------------*/
 .page-header.blog-header {
-  background: url("../img/blog-bg.jpg") no-repeat;
+  background: url("../img/blog/blog-cover.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -1120,7 +1120,7 @@ font header .navbar-default .navbar-nav li a:hover {
 					Contact-Page Start
 -----------------------------------------------*/
 .page-header.contact-header {
-  background: url("../img/contact-bg.jpg") no-repeat;
+  background: url("../img/contact/contact-cover.jpg") no-repeat;
   background-position: 0 -80px;
   background-size: cover;
   background-attachment: fixed;
