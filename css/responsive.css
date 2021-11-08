@@ -153,6 +153,9 @@ px      68    160    252    344    436    528    620    712    */
 -----------------------------------------------*/
   /*------------------*/
 }
+
+
+
 /*		Mobile Layout: 320px.
 		Gutters: 24px.
 		Outer margins: 34px.
@@ -164,8 +167,16 @@ px      68    160    252    */
 /* Responsive CSS */
 @media only screen and (max-width: 767px) {
   /*---------------------------------------------
-					Index Start 
------------------------------------------------*/
+					Common CSS
+  ----------------------------------------------*/
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /*---------------------------------------------
+					Header Start
+  ----------------------------------------------*/
   .heading {
     padding-left: 0px;
   }
@@ -179,10 +190,18 @@ px      68    160    252    */
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  #slider {
-    padding-top: 90px;
-    padding-bottom: 100px;
+  header .navbar-brand {
+    height: inherit;
+    padding-top: 15px;
   }
+
+
+  /*---------------------------------------------
+					Index-Page Start 
+  ----------------------------------------------*/
+  /*----------------
+	  Slider-Section
+  ----------------*/
   #slider .block {
     padding-left: 0px;
   }
@@ -192,9 +211,83 @@ px      68    160    252    */
   #slider .block p {
     font-size: 13px;
   }
+
   /*--
-	wrapper Start 
---*/
+    Slider-Profile Medal
+  --*/
+  #slider .profile_img {
+    width: 160px;
+  }
+  #slider .profile_coment h4 {
+    font-size: 15px;
+  }
+
+  /*----------------
+	  AboutMe-Section
+  ----------------*/
+  #aboutMe {
+    padding: 80px 0;
+  }
+  #aboutMe .col-md-5 .block {
+    text-align: center;
+  }
+  #aboutMe .block img {
+    padding-left: 0;
+    width: 80%
+  }
+
+  /*----------------
+    History-Section
+  ----------------*/
+  #history {
+    padding: 80px 0;
+  }
+  #history ul:before {
+    height: 60%;
+  }
+
+  /*----------------
+    Skill-Section
+  -----------------*/
+  #skill {
+    padding: 80px 0;
+  }
+  #skill .thumbnail {
+    padding-bottom: 70px;
+  }
+  #skill .row:nth-child(2) {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  #skill .row:nth-child(2) .col-sm-6 {
+    width: 50%;
+  }
+  #skill .skill-item {
+    padding-bottom: 40px;
+  }
+  #skill .skill_icon {
+    width: 70px;
+  }
+  
+  /*----------------
+    Project-Section
+  ----------------*/
+  #project p {
+    padding: 0px 0px 40px;
+  }
+  #project .btn {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+  
+  /*----------------
+    Blog-Section
+  ----------------*/
+  
+  
+  /*--
+    wrapper Start 
+  --*/
   #wrapper {
     text-align: center;
     padding-top: 70px;
@@ -205,28 +298,10 @@ px      68    160    252    */
     padding-left: 0px;
     width: 100%;
   }
+
   /*--
-	service Start 
---*/
-  #service {
-    padding-top: 100px;
-  }
-  #service .thumbnail {
-    padding-bottom: 70px;
-  }
-  /*--
-	call-to-action Start 
---*/
-  #call-to-action p {
-    padding: 0px 0px 40px;
-  }
-  #call-to-action .btn {
-    padding: 10px 20px;
-    font-size: 15px;
-  }
-  /*--
-	content Start 
---*/
+    content Start 
+  --*/
   #content {
     text-align: center;
     padding-top: 70px;
@@ -243,19 +318,17 @@ px      68    160    252    */
   #content .block-bottom .item-img {
     padding-left: 0px;
   }
+
   /*--
-	features Start 
---*/
+    features Start 
+  --*/
   #features .features-img {
     text-align: center;
   }
+
   /*---------------------------------------------
-					Index Close 
------------------------------------------------*/
-  /*=============================================*/
-  /*---------------------------------------------
-					Work Start 
------------------------------------------------*/
+					Project-Page Start 
+  ----------------------------------------------*/
   #slider-work {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -270,9 +343,10 @@ px      68    160    252    */
     font-size: 11px;
     line-height: 25px;
   }
+
   /*--
-	portfolio Start 
---*/
+    portfolio Start 
+  --*/
   #portfolio-work .block .portfolio-manu {
     padding-left: 0px;
     text-align: center;
@@ -309,9 +383,10 @@ px      68    160    252    */
     padding-top: 15px;
     padding-right: 5px;
   }
+
   /*--
-	wrapper Start 
---*/
+    wrapper Start 
+  --*/
   #wrapper-work ul li {
     float: none;
     width: 100%;
@@ -331,23 +406,28 @@ px      68    160    252    */
     line-height: 20px;
     padding-top: 15px;
   }
+
   /*--
-	features Start 
---*/
+    features Start 
+  --*/
   #features-work .block ul li {
     display: block;
     width: 100%;
   }
+ 
+  
   /*---------------------------------------------
-					Work close 
------------------------------------------------*/
-  /*=============================================*/
+					Blog-Page Start 
+  ----------------------------------------------*/
+
+
+
   /*---------------------------------------------
-					contact Start 
------------------------------------------------*/
+					Contact-Page Start 
+  ----------------------------------------------*/
   /*--
-	slider-contact Start 
---*/
+    slider-contact Start 
+  --*/
   #slider-contact {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -362,9 +442,10 @@ px      68    160    252    */
     font-size: 11px;
     line-height: 25px;
   }
+
   /*--
-	wrapper-contact Start 
---*/
+    wrapper-contact Start 
+  --*/
   #wrapper-contact .block {
     padding-bottom: 50px;
   }
@@ -374,22 +455,29 @@ px      68    160    252    */
   #wrapper-contact .block .social-media-icon a i {
     padding-top: 30px;
   }
+  
   /*--
-	features-contact Start 
---*/
+    features-contact Start 
+  --*/
   #features-contact .block ul li {
     display: block;
     width: 100%;
   }
+
+
   /*---------------------------------------------
-					contact close 
------------------------------------------------*/
-  /*--
-	footer Start 
---*/
+					Footer Start 
+  ----------------------------------------------*/
   footer .footer-manu {
     display: none;
   }
+
+
+  /*---------------------------------------------
+					위치 미상 
+  ----------------------------------------------*/
+  
+  
 }
 /*		Wide Mobile Layout: 480px.
 		Gutters: 24px.

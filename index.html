@@ -322,7 +322,7 @@ permalink: /
         <h2>Blog</h2>
         <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p> -->
       </div>
-      <div class="blog-box">
+      <div class="blog-box col-md-12">
         {% for post in site.posts %}
         <div class="blog-inner">
           <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
@@ -333,7 +333,7 @@ permalink: /
         </div>
         {% endfor %}
       </div>
-      <div class="more-blog">
+      <div class="more-blog col-md-12">
         <a href="{{ site.baseurl }}/blog">
           <span class="material-icons">navigate_next</span>더보기
         </a>
