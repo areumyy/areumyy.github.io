@@ -862,7 +862,6 @@ font header .navbar-default .navbar-nav li a:hover {
 .page-header .block {
   color: #E3E3E4;
   margin: 0 auto;
-  padding-left: 90px;
   text-align: center;
 }
 .page-header .block h1 {
@@ -1069,7 +1068,7 @@ font header .navbar-default .navbar-nav li a:hover {
   background-attachment: fixed;
 }
 .post-box {
-  width: 1170px;
+  /* width: 1170px; */
   margin: auto;
   padding: 40px 0 80px 0;
 }
