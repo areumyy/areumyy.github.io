@@ -194,7 +194,9 @@ px      68    160    252    */
     height: inherit;
     padding-top: 15px;
   }
-
+  header .info_badge {
+    top: 120px
+  }
 
   /*---------------------------------------------
 					Index-Page Start 
@@ -279,7 +281,15 @@ px      68    160    252    */
     padding: 10px 20px;
     font-size: 15px;
   }
+  #project .swiper-prev, 
+  #project .swiper-next {
+    display: none;
+  }
+  #project .swiper-container .swiper-wrapper .swiper-slide-active .overly {
+    display: none;
+  }
   
+
   /*----------------
     Blog-Section
   ----------------*/
@@ -471,6 +481,12 @@ px      68    160    252    */
   footer .footer-manu {
     display: none;
   }
+  footer .row-footer {
+    display: block;
+  }
+  footer .footer_github {
+    margin-bottom: 15px;
+  }
 
 
   /*---------------------------------------------
@@ -490,3 +506,17 @@ px      68    160    252    344    436    */
 	Overrides styles for devices with a 
 	device-pixel-ratio of 2+, such as iPhone 4.
 -----------------------------------------------    */
+
+@media only screen and (max-width: 1000px) {
+  #project .swiper-container .swiper-wrapper .swiper-slide {
+    opacity: 1
+  }
+  #project .swiper-prev {
+    margin-left: -400px;
+  }
+  #project .swiper-next {
+    margin-right: -400px;
+  }
+  
+
+}

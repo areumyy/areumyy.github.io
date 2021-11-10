@@ -518,7 +518,6 @@ font header .navbar-default .navbar-nav li a:hover {
   /* width: calc(330px * 3 + 20px); */
   width: inherit;
   height: 200px;
-  /* background-color: orange; */
   overflow: hidden;
 }
 #project .swiper-container .swiper-wrapper{
