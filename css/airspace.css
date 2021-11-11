@@ -525,7 +525,6 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #project .swiper-container .swiper-wrapper .swiper-slide {
   opacity: .2;
-  transition: opacity 1s;
 }
 #project .swiper-container .swiper-wrapper .swiper-slide-active {
   opacity: 1;
@@ -533,6 +532,10 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #project .swiper-container .swiper-wrapper .swiper-slide-active:nth-child(3) {
   margin-right: 0;
+}
+#project .swiper-container .swiper-wrapper .swiper-slide .swiper_link  {
+  width: inherit;
+  height: inherit;
 }
 #project .swiper-container .swiper-wrapper .swiper-slide .project_img {
   width: inherit;
