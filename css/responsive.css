@@ -195,7 +195,7 @@ px      68    160    252    */
     padding-top: 15px;
   }
   header .info_badge {
-    top: 120px
+    top: 130px
   }
 
   /*---------------------------------------------
@@ -407,6 +407,20 @@ px      68    160    252    */
   }
 
   /*--
+    MarkDown
+  --*/
+  .project #intro {
+    padding: 80px 0;
+  }
+  .project .row {
+    margin-left: 0; 
+    margin-right: 0;
+  }
+  .project .row h1 {
+    font-size: 31px;
+  }
+
+  /*--
     wrapper Start 
   --*/
   #wrapper-work ul li {
@@ -444,6 +458,21 @@ px      68    160    252    */
   .page-header.blog-header {
     background-size: auto;
   }
+
+  /*--
+    MarkDown
+  --*/
+  .post #intro {
+    padding: 80px 0;
+  }
+  .post .row {
+    margin-left: 0; 
+    margin-right: 0;
+  }
+  .post .row h1 {
+    font-size: 31px;
+  }
+
 
 
   /*---------------------------------------------

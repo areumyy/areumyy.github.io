@@ -1043,8 +1043,8 @@ font header .navbar-default .navbar-nav li a:hover {
   display: block;
   margin: 0 auto;
 }
-.project .container_box {
-  width: 800px;
+.project .container {
+  max-width: 800px;
   margin: 0 auto;
 }
 .project img + em {
@@ -1098,7 +1098,7 @@ font header .navbar-default .navbar-nav li a:hover {
   margin: 0 auto;
 }
 .post .container {
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
 }
 .post img + em {

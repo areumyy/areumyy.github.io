@@ -172,7 +172,7 @@ window.addEventListener('scroll', _.throttle(function() {
 
 	console.log('scrollY >>> ', window.scrollY)
 
-	if(window.scrollY > 1225) {
+	if(window.scrollY > 1300) {
 
 		for(let i=0; i<graphEls.length; i++) {
 			
@@ -203,17 +203,17 @@ window.addEventListener('scroll', _.throttle(function() {
 new Swiper('.swiper-container', {
 	// direction: 'horizontal' => swiper 함수에 기본값으로 들어가있음
 	// slidesPerView: 3,        // 한번에 보여줄 슬라이드 개수
-	spaceBetween: 20,        // 슬라이드 사이 여백
-	centeredSlides: true,    // 1번 슬라이드가 가운데 보이기
-	loop: true,              // 반복재생여부
-	autoplay: {              // 자동재생여부 - 3s
+	spaceBetween: 20,        	// 슬라이드 사이 여백
+	centeredSlides: true,    	// 1번 슬라이드가 가운데 보이기
+	loop: true,              	// 반복재생여부
+	autoplay: {              	// 자동재생여부 - 3s
 		delay: 3000       
 	},
 	pagination: {
 	el: '.swiper-pagination',   //페이지 번호 요소 선택자
-	clickable: true   //사용자의페이지 번호 요소 제어가능 여부 (클릭가능 여부)
+	clickable: true   			//사용자의페이지 번호 요소 제어가능 여부 (클릭가능 여부)
 	},
-	navigation: { // 슬라이드 이전/다음 버튼 사용 여부
+	navigation: { 				// 슬라이드 이전/다음 버튼 사용 여부
 	prevEl: '.swiper-prev',
 	nextEl: '.swiper-next'
 	},
