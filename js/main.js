@@ -94,20 +94,29 @@ totop.addEventListener('click', function(){
 
 
 // Index Page - Slider Section 아이콘 클릭시 펼쳐짐 효과
-let emailEls = document.querySelectorAll('.contact')
-let contactEl = document.querySelectorAll('.contact_info')
+let contEls = document.querySelectorAll('.contact')
+let infoEls = document.querySelectorAll('.contact_info')
+let itemli = $('.contact');
+let itemInfo = $('.contact_info');
 
-console.log('emailEl >>> ', emailEls)
-console.log('contactEl >>> ', contactEl)
+console.log('contEls >>> ', contEls)
+console.log('infoEls >>> ', infoEls)
+console.log('itemli >>> ', itemli)
 
-emailEls.forEach((emailEl, index) => emailEl.addEventListener('click', function(){
+contEls.forEach((contEl, index) => contEl.addEventListener('click', function(){
 
-	if(emailEl.classList.contains('selected')) {
-		emailEl.classList.remove('selected');
-		contactEl[index].style.display = 'none'
+	if(contEl.classList.contains('selected')) {
+		contEl.classList.remove('selected');
+		infoEls[index].style.display = 'none';
 	} else {
-		emailEl.classList.add('selected')
-		contactEl[index].style.display = 'block'
+		contEl.classList.add('selected');
+		infoEls[index].style.display = 'block';
+		// jQurey 적용 -> 클릭된 선택자 이외의 요소를 숨겨주는 코드
+		itemli.click(function () {
+			itemli.not($(this)).removeClass('selected');
+			itemli.not($(this)).find('.contact_info').css('display', 'none');
+			// itemInfo.not($(this)).css('display', 'none');
+		});
 	}
 	
 }))
@@ -164,9 +173,6 @@ emailEls.forEach((emailEl, index) => emailEl.addEventListener('click', function(
 // Index Page - Skill Section 그래프바 애니메이션 효과
 let skill = document.getElementById('skill')
 let graphEls = skill.querySelectorAll('.graph')
-
-console.log('skill >>> ', skill)
-console.log('graph >>> ', graphEls)
 
 window.addEventListener('scroll', _.throttle(function() {
 
