@@ -10,6 +10,7 @@ author: Areum-Jung
 <br>
 
 <img width="300" alt="frip" src="https://user-images.githubusercontent.com/78872071/134526592-3dad5f29-7828-4439-a263-cb93edcd0c1c.PNG">  
+<!-- ![frip](/img/project/frip.png)   -->
   
 <br>
 

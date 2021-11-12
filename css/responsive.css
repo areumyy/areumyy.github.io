@@ -19,8 +19,8 @@ px      68    160    252    344    436    528    620    712    */
 					Index Start 
 -----------------------------------------------*/
   /*--
-	wrapper Start 
---*/
+    wrapper Start 
+  --*/
   #wrapper {
     text-align: center;
   }
@@ -29,8 +29,8 @@ px      68    160    252    344    436    528    620    712    */
     width: 50%;
   }
   /*--
-	content Start 
---*/
+    content Start 
+  --*/
   #content {
     text-align: center;
   }
@@ -38,14 +38,14 @@ px      68    160    252    344    436    528    620    712    */
     padding-bottom: 100px;
   }
   /*--
-	features Start 
---*/
+    features Start 
+  --*/
   #features {
     text-align: center;
   }
   /*--
-	footer Start 
---*/
+    footer Start 
+  --*/
   footer .navbar {
     margin-bottom: 0px;
     border: 0px;
@@ -63,16 +63,13 @@ px      68    160    252    344    436    528    620    712    */
   footer .navbar-default .navbar-nav li a:hover {
     color: #000;
   }
-  /*---------------------------------------------
-					Index Close 
------------------------------------------------*/
-  /*=============================================*/
+
   /*---------------------------------------------
 					Work Start 
------------------------------------------------*/
+  -----------------------------------------------*/
   /*--
-	slider-work Start 
---*/
+    slider-work Start 
+  --*/
   #slider-work .block h1 {
     font-size: 28px;
   }
@@ -80,8 +77,8 @@ px      68    160    252    344    436    528    620    712    */
     font-size: 15px;
   }
   /*--
-	portfolio Start 
---*/
+    portfolio Start 
+  --*/
   #portfolio-work .block .portfolio-manu {
     padding-left: 0px;
   }
@@ -111,8 +108,8 @@ px      68    160    252    344    436    528    620    712    */
     padding-top: 15px;
   }
   /*--
-	wrapper Start 
---*/
+    wrapper Start 
+  --*/
   #wrapper-work ul li .items-text {
     padding-top: 0;
     padding-left: 25px;
@@ -127,31 +124,24 @@ px      68    160    252    344    436    528    620    712    */
     padding-right: 30px;
   }
   /*--
-	features Start 
---*/
+    features Start 
+  --*/
   #features-work .block ul li {
     width: 49%;
   }
-  /*---------------------------------------------
-					Work close 
------------------------------------------------*/
-  /*=============================================*/
+
   /*---------------------------------------------
 					contact start 
------------------------------------------------*/
+  -----------------------------------------------*/
   #wrapper-contact .block {
     padding-bottom: 50px;
   }
   /*--
-	features-contact Start 
---*/
+    features-contact Start 
+  --*/
   #features-contact .block ul li {
     width: 49%;
   }
-  /*---------------------------------------------
-					contact close 
------------------------------------------------*/
-  /*------------------*/
 }
 
 
@@ -164,7 +154,7 @@ px      68    160    252    344    436    528    620    712    */
 cols    1     2      3
 px      68    160    252    */
 
-/* Responsive CSS */
+/* Responsive CSS max-width: 767px */
 @media only screen and (max-width: 767px) {
   /*---------------------------------------------
 					Common CSS
@@ -405,6 +395,9 @@ px      68    160    252    */
   #portfolio-work .block .portfolio-menu ul li {
     padding: 0px 20px;
   }
+  #portfolio-work .block .portfolio-contant ul li:hover .overly {
+    display: none;
+  }
 
   /*--
     MarkDown
@@ -478,9 +471,6 @@ px      68    160    252    */
   /*---------------------------------------------
 					Contact-Page Start 
   ----------------------------------------------*/
-  .page-header.contact-header {
-    /* background-position: center; */
-  }
   /*--
     slider-contact Start 
   --*/
@@ -533,12 +523,6 @@ px      68    160    252    */
   footer .footer_github {
     margin-bottom: 15px;
   }
-
-
-  /*---------------------------------------------
-					위치 미상 
-  ----------------------------------------------*/
-  
   
 }
 /*		Wide Mobile Layout: 480px.
@@ -553,6 +537,7 @@ px      68    160    252    344    436    */
 	device-pixel-ratio of 2+, such as iPhone 4.
 -----------------------------------------------    */
 
+/* Responsive CSS max-width: 1000px */
 @media only screen and (max-width: 1000px) {
   #project .swiper-container .swiper-wrapper .swiper-slide {
     opacity: 1
@@ -564,5 +549,4 @@ px      68    160    252    344    436    */
     margin-right: -400px;
   }
   
-
 }
