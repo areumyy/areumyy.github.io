@@ -1257,13 +1257,13 @@ footer .row-footer {
 /*---------------------------------------------
 					README CSS
 -----------------------------------------------*/
-.markdown-body p{
+.Box-body .markdown-body p{
   margin-bottom: 7px;
 }
-.markdown-body p:nth-child(4):nth-child(5){
+.Box-body .markdown-body p:nth-child(4):nth-child(5){
   color: #8b86a3;
 }
-.markdown-body p:nth-child(4):nth-child(5) a{
+.Box-body .markdown-body p:nth-child(4):nth-child(5) a{
   color: rgb(32, 44, 102);
 }
 
