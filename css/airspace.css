@@ -1254,6 +1254,18 @@ footer .row-footer {
   z-index: 9;    /* 다른요소들 보다 최상단에 위치 */
 }
 
+/*---------------------------------------------
+					README CSS
+-----------------------------------------------*/
+.markdown-body p{
+  margin-bottom: 7px;
+}
+.markdown-body p:nth-child(4):nth-child(5){
+  color: #8b86a3;
+}
+.markdown-body p:nth-child(4):nth-child(5) a{
+  color: rgb(32, 44, 102);
+}
 
 
 /*---------------------------------------------
