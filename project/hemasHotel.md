@@ -111,6 +111,11 @@ author: Areum-Jung
 
 <br>
 
+![예약변경2](https://user-images.githubusercontent.com/78872071/143908828-d1bcdf79-7293-4926-81de-4f4c4260e15f.PNG)
+*예약변경2*
+
+<br>
+
 ![회원정보수정1](https://user-images.githubusercontent.com/78872071/134597877-86b0fa79-c82e-41a3-b128-ea7135f83444.PNG)
 ![회원정보수정2](https://user-images.githubusercontent.com/78872071/134597880-e7dd64bd-5401-442d-8812-302b72bdeeaa.PNG)
 *회원 정보 수정*
