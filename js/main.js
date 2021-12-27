@@ -165,6 +165,7 @@ contEls.forEach((contEl, index) => contEl.addEventListener('click', function(){
 // Index Page - Skill Section 그래프바 애니메이션 효과
 let skill = document.getElementById('skill')
 let graphEls = skill.querySelectorAll('.graph')
+// let percent = skill.querySelectorAll('.percent_box p')
 
 window.addEventListener('scroll', _.throttle(function() {
 
@@ -175,6 +176,7 @@ window.addEventListener('scroll', _.throttle(function() {
 		for(let i=0; i<graphEls.length; i++) {
 			
 			gsap.to(graphEls[i], 1, {
+				// width: percent[i].innerHTML,
 				width: graphEls[i].dataset.width +'%',
 				height: '7px'
 			});

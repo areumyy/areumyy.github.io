@@ -262,7 +262,7 @@ font header .navbar-default .navbar-nav li a:hover {
   transition: .4s;
   cursor: pointer;
 }
-#slider ul li:nth-child(3) {
+#slider ul li:nth-child(4) {
   margin-right: 0px;
 }
 #slider ul li.selected {
@@ -1206,6 +1206,12 @@ footer {
   text-align: center;
   padding-top: 48px;
   padding-bottom: 55px;
+}
+footer .footer_link {
+  display: flex;
+}
+footer .footer_link a:nth-child(1) {
+  margin-right: 15px;
 }
 footer p {
   font-size: 13px;
