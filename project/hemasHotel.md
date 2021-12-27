@@ -35,7 +35,8 @@ author: Areum-Jung
 
 <br>
 
-[Link : [Git](https://github.com/areumyy/JSP_TeamProject "hemasHotel link") ]
+[저장소 [Git](https://github.com/areumyy/JSP_TeamProject "hemasHotel link") ]  
+[제작일지 [Notion](https://hushed-tuna-4c5.notion.site/Hemas-Hotel-JSP-Project-981b1d18266d4bff81e3c0f9944f3d50 "hemasHotel notion") ]
 
 <br>
 

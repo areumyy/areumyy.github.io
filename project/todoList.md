@@ -40,9 +40,8 @@ To-Do List 제작기에 대한 기록은 아래 노션 사이트에서 확인이
 
 <br>
 
-[Link : [Notion](https://www.notion.so/TODO-LIST-e8ab80892d24432b996d141c90b36c86 "Todo-List")]
-
- [Link : [Git](https://github.com/areumyy/JS-Study "Todo-List") ]
+[저장소 [Git](https://github.com/areumyy/JS-Study "Todo-List link") ]  
+[제작일지 [Notion](https://hushed-tuna-4c5.notion.site/TODO-LIST-e8ab80892d24432b996d141c90b36c86 "Todo-List notion")]
 
 <br>
 

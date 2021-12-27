@@ -38,7 +38,8 @@ author: Areum-Jung
 
 <br>
 
-[Link : [Git](https://www.github.com/areumyy/SpringProject "frip link") ]
+[저장소 [Git](https://www.github.com/areumyy/SpringProject "frip link") ]  
+[제작일지 [Notion](https://hushed-tuna-4c5.notion.site/Frip-Spring-Project-e1557fdc529d4caab86ecb3736a710f5 "frip notion")]
 
 <br>
 

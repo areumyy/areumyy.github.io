@@ -32,6 +32,9 @@ author: Areum-Jung
 스타벅스 키오스크를 구현한 회원전용 주문 시스템
 
 <br>
+[제작일지 [Notion](https://hushed-tuna-4c5.notion.site/Starbucks-Java-Project-09e1b03dd9fa4873bb8421017dea144d "starbucks notion") ]  
+
+<br>
 
 ---
 ## **구현파트**
