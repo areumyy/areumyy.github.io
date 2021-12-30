@@ -40,7 +40,12 @@ ul {
   padding: 0;
   margin: 0;
   list-style: disc;
-  /* list-style-position: inside; */
+  list-style-position: inside;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-position: inside;
 }
 a,
 a:active,
@@ -731,8 +736,10 @@ font header .navbar-default .navbar-nav li a:hover {
   border-bottom: 1px dotted #ddd;
 }
 #blog .blog-inner a:link, .blog-inner a:visited {
-  font-size: 30px;
+  font-size: 25px;
   color: #333;
+  display: inline-block;
+  margin-bottom: 5px;
 }
 #blog .blog-inner a:hover {
   color: #0D0017;
@@ -1041,6 +1048,10 @@ font header .navbar-default .navbar-nav li a:hover {
 .project #intro {
   padding: 100px 0;
 }
+.project ul li {
+  font-size: 14px;
+  line-height: 30px;
+}
 .project .block_p img {
   width: 80%;
   display: block;
@@ -1083,7 +1094,7 @@ font header .navbar-default .navbar-nav li a:hover {
   padding: 100px 0;
 }
 .post #intro .block p {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .post #intro .block blockquote {
   margin: 0 0 10px;

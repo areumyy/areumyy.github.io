@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 블로그 제작을 마치며
-subtitle: first posting
+subtitle: GitBlog 제작기
 date: 2021-10-15
 author: Areum-Jung
 ---  
@@ -16,6 +16,8 @@ author: Areum-Jung
         Period: 21/09/16 ~ 21/10/15
              
 우선 제작기간은 약 한 달 정도가 소요되었다. jekyll 테마를 활용해 큰 레이아웃을 잡아 추가 기능들을 수정하였고 자잘한 수정들은 현재도 계속 진행 중이다.  
+<br>
+[깃블로그 제작기 [Notion](https://hushed-tuna-4c5.notion.site/8fb5affa7fd64ceb9bf97ab7bc83ee12)]  
 <br>
 
 ---
@@ -86,7 +88,7 @@ Jekyll 테마는 **[Jekyll Themes](http://themes.jekyllrc.org/)** 사이트에�
 
 특히 처음에 사이트 생성 과정에서 며칠간 고생했던 기억이 있다. 지킬 테마 적용 후 bundle 설치로 애먹어 Git Repository를 열번 정도 지웠다 생성한거 같다. 간단하게 노션에 오류일지를 기록해놨으며, 아래 링크를 통해 확인이 가능하다.
 
-[Link : [Notion](https://www.notion.so/4355bda34cc94cf49abc2d20feffbaa8)]  
+[오류 삽질일지 [Notion](https://hushed-tuna-4c5.notion.site/5be05820080144c8b11a02ceea81f736)]  
 <br>
 
 ---
