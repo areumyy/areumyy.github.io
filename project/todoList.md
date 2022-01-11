@@ -40,8 +40,8 @@ To-Do List 제작기에 대한 기록은 아래 노션 사이트에서 확인이
 
 <br>
 
-[저장소 [Git](https://github.com/areumyy/JS-Study "Todo-List link") ]  
-[제작일지 [Notion](https://hushed-tuna-4c5.notion.site/TODO-LIST-e8ab80892d24432b996d141c90b36c86 "Todo-List notion")]
+🚀 저장소 [Git](https://github.com/areumyy/JS-Study "Todo-List link")  
+🚀 제작일지 [Notion](https://hushed-tuna-4c5.notion.site/TODO-LIST-e8ab80892d24432b996d141c90b36c86 "Todo-List notion")
 
 <br>
 
@@ -49,13 +49,13 @@ To-Do List 제작기에 대한 기록은 아래 노션 사이트에서 확인이
 ## **페이지별 요구기능**  
 <br>
 
-1. **리스트 작성** - Enter키와 추가(+)버튼을 통한 이벤트 실행 (※ 내용 미 입력 시 경고 메시지 출력)  
+1.**리스트 작성** - Enter키와 추가(+)버튼을 통한 이벤트 실행 (※ 내용 미 입력 시 경고 메시지 출력)  
 
-2. **리스트 체크** -  체크박스 또는 텍스트(라벨) 클릭 시 체크선 속성 적용  
+2.**리스트 체크** -  체크박스 또는 텍스트(라벨) 클릭 시 체크선 속성 적용  
 
-3. **리스트 삭제 / 전체 삭제** - 리스트 별 x버튼과 전체 삭제 버튼 생성  
+3.**리스트 삭제 / 전체 삭제** - 리스트 별 x버튼과 전체 삭제 버튼 생성  
 
-4. **전체/진행 중/완료 별 리스트 조회와 개수 보여주기** - 조회항목 별 버튼 생성하여 현재 개수 표시
+4.**전체/진행 중/완료 별 리스트 조회와 개수 보여주기** - 조회항목 별 버튼 생성하여 현재 개수 표시
 
 <br>
 

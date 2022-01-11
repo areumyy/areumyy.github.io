@@ -42,10 +42,13 @@ ul {
   list-style: disc;
   list-style-position: inside;
 }
-ul {
+ol {
   padding: 0;
   margin: 0;
   list-style-position: inside;
+}
+ol ul {
+  padding-left: 20px;
 }
 a,
 a:active,
